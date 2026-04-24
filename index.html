@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lumora - HomePage</title>
+        <meta name="description" content="Shop handcrafted candles and natural dry oils at Lumora. Create a cozy, relaxing atmosphere with our premium scented products."/>
+        <meta name="author" content="Lumora" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="img/logo.png" />
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <img src="img/logo.png" alt="logo" />
+                <nav>
+                    <div class="search-container">
+                        <input list="search" placeholder="Search For..." />
+                        <datalist id="search">
+                            <option value="candles"></option>
+                            <option value="dry oils"></option>
+                            <option value=" candle 1"></option>
+                            <option value=" candle 2"></option>
+                            <option value=" candle 3"></option>
+                            <option value=" candle 4"></option>
+                            <option value=" dry oil 1"></option>
+                            <option value="dry oil 2"></option>
+                            <option value="dry oil 3"></option>
+                            <option value="dry oil 4"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="profile-btn" id="profileBtn">👤</button>
+
+                        <ul class="dropdown-menu" id="dropdownMenu">
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                    <div class="cart-container">
+                        <a href="/cart" class="cart">🛒</a>
+                        <span id="cart-count" class="cart-badge">0</span>
+                    </div>
+                    <div class="dropdown">
+                        <button class="theme-btn" id="themeBtn">🌓</button>
+
+                        <ul class="dropdown-menu" id="themeMenu">
+                            <li class="active-mode"><a href="#">Light Mode ✓</a></li>
+                            <li><a href="#">Dark Mode</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-container">
+                        <button class="menu-icon" id="openMenu">☰</button>
+
+                        <div class="side-menu" id="sideWindow">
+                            <button class="close-btn" id="closeMenu">&times;</button>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="html/products_and_details.html">Shop</a></li>
+                                <li><a href="html/wishlist.html">Wishlist</a></li>
+                                <li><a href="html/offers.html">Offers</a></li>
+                                <li><a href="html/bundles.html">Bundles</a></li>
+                                <li><a href="html/about_us.html">About us</a></li>
+                            </ul>
+                        </div>
+                        <div class="overlay" id="overlay"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <hr />
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Soft glow</h1>
+                        <h2>Strong vibe</h2>
+                        <p class="description">
+                        Shop our collecion of handcrafted candles <br />
+                        and dry oils, crafted with love and care.
+                        </p>
+                    </div>
+
+                    <div class="image">
+                        <img src="img/homepicture.png" alt="Picture" />
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2026 Lumora. All rights reserved.</p>
+            <p>Follow us on our social media</p>
+            <div class="social-icons">       
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>       
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>        
+                <a href="mailto:support@lumora.com"><i class="fa-solid fa-envelope"></i></a>    
+            </div></footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utd-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>checkout</title>
+    </head>
+    <body>
+           <header>
+              <nav>
+                 <img src="logo.png">
+                 <a href="index.html">home</a>
+              </nav>
+           </header>
+           <hr>
+           <h1>checkout</h1>
+           <h3>contact information:</h3>
+           <form>
+            <div>
+                <label id="name1">first name</label>
+                <br>
+                <input type="text" id="name1" required>
+            </div>
+            <div>
+                <label for="name2">second name</label>
+                <br>
+                <input type="text" id="name2" required >
+            </div>
+            <div>
+                <label for="email">email</label>
+                  <br>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="tel">phone number</label> 
+                 <br>
+                <input type="tel" id="tel" required>
+            </div>
+          
+           <hr id="line">
+           <h3>shipping information:</h3>
+           
+           <div>
+             <label for="cnt">country</label>
+               <br>
+             <input type="text" id="cnt" required >
+           </div>
+            <div>
+             <label for="city">city</label>  
+                <br>
+             <input type="text" id="city" required >
+           </div>
+           <div>
+             <label for="add">address</label>
+               <br>
+             <input type="text" id="add" required >
+           </div>
+           <h3>payment methode:</h3>
+           <div>
+            <input type="radio" value="pay by" name="pay" required>
+            <label>cash on delivery</label>
+           </div>
+           <div>
+             <input type="radio" value="pay by" name="pay" required>
+             <label>viza</label>
+               <div>
+                  <div>
+                    <label for="card number">card number</label>
+                    <input type="number" id="card number" required>
+                  </div>
+                  <div>
+                    <label for="exp">exp.date</label>
+                    <input id="exp" type="month" required>
+                  </div>
+                  <div>
+                    <label for="cvv">cvv</label>
+                    <input id="cvv" type="number" required>
+                  </div>
+               </div>
+           </div>
+           <h2>total price items</h2>
+           <h2> delivery cost</h2>
+           <h2>total to pay</h2>
+           <input type="submit" value="pay now" id="pay" >
+         </form>
+         <hr>
+         <footer>
+            <a href="about us .html">about us</a>
+         </footer>
+    </body>
+</html>

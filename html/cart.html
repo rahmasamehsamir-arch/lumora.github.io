@@ -2,12 +2,14 @@
 <html>
     <head>
         <title>Lumora - Shopping Cart</title>
+        <link rel="stylesheet" href="..\css\cart.css">
     </head>
     <body>
         <header></header>
         <nav></nav>
         <main>
             <section class="page_name"><h1>Shopping Cart</h1></section>
+            <section class="everything">
             <section class="cart_details">
                 <div class="products">
                     <div class="products_header">
@@ -19,9 +21,9 @@
                         <span>Total</span>
                     </div>
                     <div class="product">
-                        <div class="info">
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                         <img src="..\img\berryblush.png.jpeg" alt="">
+                        <div class="info">
                         <h3>Lumora Handmade Candles - Berry Blush</h3>
                         </div>
                         <div class="unit_price">100EGP</div>
@@ -35,9 +37,9 @@
 
                     </div>
                     <div class="product">
-                        <div class="info">
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                         <img src="..\img\rosewhisper.png.jpeg" alt="">
+                        <div class="info">
                         <h3>Lumora Handmade Candles - Rose Whisper</h3>
                         </div>
                         <div class="unit_price">100EGP</div>
@@ -51,9 +53,9 @@
 
                     </div>
                     <div class="product">
-                        <div class="info">
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                         <img src="..\img\mochachill.png.jpeg" alt="">
+                        <div class="info">   
                         <h3>Lumora Handmade Candles - Mocha Chill</h3>
                         </div>
                         <div class="unit_price">100EGP</div>
@@ -67,9 +69,9 @@
 
                     </div>
                     <div class="product">
-                        <div class="info">
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                         <img src="..\img\dreamylavender.png.jpeg" alt="">
+                        <div class="info">
                         <h3>Lumora Handmade Candles - Dreamy Lavender</h3>
                         </div>
                         <div class="unit_price">100EGP</div>
@@ -83,9 +85,9 @@
 
                     </div>
                     <div class="product">
-                        <div class="info">
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                         <img src="..\img\relaxbloom.jpeg" alt="">
+                        <div class="info">
                         <h3>Lumora Essential Oil - Relax Bloom</h3>
                         </div>
                         <div class="unit_price">100EGP</div>
@@ -99,9 +101,9 @@
 
                     </div>
                     <div class="product">
-                        <div class="info">
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                         <img src="..\img\strawberrykiss.jpeg" alt="">
+                        <div class="info">
                         <h3>Lumora Essential Oil - Strawberry Kiss</h3>
                         </div>
                         <div class="unit_price">100EGP</div>
@@ -115,9 +117,9 @@
 
                     </div>
                     <div class="product">
-                        <div class="info">
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                         <img src="..\img\rosydream.jpeg" alt="">
+                        <div class="info">
                         <h3>Lumora Essential Oil - Rosy Dream</h3>
                         </div>
                         <div class="unit_price">100EGP</div>
@@ -131,9 +133,9 @@
 
                     </div>
                     <div class="product">
-                        <div class="info">
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                         <img src="..\img\ambersoul.jpeg" alt="">
+                        <div class="info">
                         <h3>Lumora Essential Oil - Amber Soul</h3>
                         </div>
                         <div class="unit_price">100EGP</div>
@@ -147,14 +149,16 @@
 
                     </div>
                 </div>
-                <div class="coupon">
+                <div class="container">
+                    <div class="coupon">
                     <p>Have a promo code?</p>
                     <input type="text" placeholder=" Enter coupon code">
-                    <button>Apply</button>
+                    <button class="apply">Apply</button>
                 </div>
                 <div class="wishlist">
                     <p>Don't wanna buy now?</p>
                     <a href="wishlist.html"> &lt; Save for later</a>
+                </div>
                 </div>
             </section>
             <section class="cart_totals">
@@ -164,6 +168,7 @@
                 Proceed to Checkout
                 </button>
                 <a href="..\index.html"> &lt; Continue Shopping</a>
+            </section>
             </section>
         </main>
         <footer></footer>

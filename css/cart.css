@@ -1,0 +1,113 @@
+body{
+    background-color: #F5F0E1;
+    min-height: 100vh;
+}
+main{
+    margin:70px;
+}
+.everything{
+    display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.cart_details{
+    width: 60%;
+}
+.cart_totals{
+    width: 40%;
+}
+.page_name{
+    font-size: larger;
+    font-family: Georgia;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+.products_header,
+.product {
+  display: grid;
+  grid-template-columns: 10px 80px 1fr 130px 130px 130px;
+  align-items: center;
+  gap: 15px;
+}
+.products_header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+  background: #f3e9d7;
+}
+.product {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px 0;
+  border-bottom: 2px solid #ddd;
+}
+.product:hover{
+    background-color:#f3e9d7 ;
+}
+img {
+  width: 60px;
+}
+button {
+  cursor: pointer;
+}
+
+.remove {
+    color:#b08968 ;
+  background: none;
+  border: none;
+  font-size: 25px;
+  opacity: 0.8;
+  padding: 3px 0px;
+}
+.remove:hover{
+    color: #d6bfa6;
+}
+
+.quantity button {
+  padding: 5px 6px;
+}
+.minus,
+.plus{border: none;
+background-color: #d6bfa6;
+border-radius: 10px;
+}
+.minus:hover{
+    background-color: #b08968;
+}
+.plus:hover{
+    background-color: #b08968;
+}
+.coupon{
+    padding: 10px 0px 0px 20px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7a553a;
+}
+input{
+    border:none ;
+    border-bottom: 2px solid #aaa;
+    background: transparent;
+    outline: none;
+    width: 30%;
+    padding: 5px;
+}
+::placeholder{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.apply{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 5px;
+    border-radius: 4px;
+    border: none;
+    width: 10%;
+    padding: 10px;
+    background-color: #ddd;
+}
+.apply:hover{
+    background-color: #c6c5c5;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

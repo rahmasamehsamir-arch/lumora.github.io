@@ -14,7 +14,25 @@ main{
     width: 60%;
 }
 .cart_totals{
-    width: 40%;
+    width: 40%;text-align: center;
+}
+h2{
+    font-size: xx-large;
+    margin-top: 0px;
+    background-color: #f3e9d7;
+    border-bottom: 2px solid #ddd;
+    padding: 2px;
+    
+}
+.checkout{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    background-color: #d6bfa6;
+}
+.checkout:hover{
+    background-color: #b08968;
 }
 .page_name{
     font-size: larger;
@@ -30,6 +48,7 @@ main{
   gap: 15px;
 }
 .products_header {
+    font-size: larger;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   border-bottom: 2px solid #ddd;
@@ -82,6 +101,8 @@ border-radius: 10px;
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #7a553a;
+  flex-direction: column;
+  
 }
 input{
     border:none ;
@@ -90,24 +111,49 @@ input{
     outline: none;
     width: 30%;
     padding: 5px;
+    width: 250px;
+    font-size: 14px;
+}
+input:focus{
+    border: #7a553a solid 2px;
+    border-radius: 4px;
 }
 ::placeholder{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .apply{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 5px;
     border-radius: 4px;
     border: none;
-    width: 10%;
     padding: 10px;
-    background-color: #ddd;
+    background-color: #d6bfa6;
 }
 .apply:hover{
-    background-color: #c6c5c5;
+    background-color: #b08968;
+}
+.coupon_row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* مسافة بين input و button */
 }
 .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+.wishlist{
+    padding: 10px 0px 0px 20px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7a553a;
+  flex-direction: column;
+}
+.wishlist a{
+    text-decoration: none;
+    color: #858383;
+    padding-left: 23px;
+    font-size:17px ;
+}
+.wishlist a:hover{
+    color: #7a553a;
 }

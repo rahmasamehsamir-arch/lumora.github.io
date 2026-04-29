@@ -1,92 +1,35 @@
-/* Position the container so the menu stays near the icon */
-.dropdown {
-    position: relative;
-    display: inline-block;
+*{
+    background-color: #f5f0e1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#logo {
+    width: 30px;
+}
+.hero img {
+  width: 100%;
+  height: 700px;     
+  object-fit: cover;  
 }
 
-/* Style the icon button */
-.profile-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 20px;
 }
 
-/* The actual menu styling */
-.dropdown-menu {
-    display: none; /* HIDE BY DEFAULT */
-    position: absolute;
-    right: 0;
-    background-color: white;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    list-style: none;
-    padding: 10px;
-    z-index: 1;
+.hero img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  display: block;
 }
-
-/* This class will be added/removed by JavaScript */
-.dropdown-menu.show {
-    display: block;
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15); 
 }
-
-.dropdown-menu li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 8px;
-}
-/* Container */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* The Icon Button */
-.theme-btn {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-/* The Menu (Hidden by default) */
-.dropdown-menu {
-    display: none; 
-    position: absolute;
-    top: 100%; /* Appears right below the icon */
-    right: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    list-style: none;
-    padding: 5px 0;
-    min-width: 140px;
-    border-radius: 8px;
-    z-index: 100;
-}
-
-/* Show class to be toggled by JS */
-.dropdown-menu.show {
-    display: block;
-}
-
-/* Menu Items */
-.dropdown-menu li a {
-    padding: 10px 20px;
-    display: block;
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-}
-
-/* Highlighting the active mode */
-.active-mode a {
-    font-weight: bold;
-    color: #007bff; /* Example: blue for the active choice */
-}
-
-.dropdown-menu li a:hover {
-    background-color: #f5f5f5;
+.hero {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }

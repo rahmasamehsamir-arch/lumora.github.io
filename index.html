@@ -7,101 +7,62 @@
         <meta name="author" content="Lumora" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/navbar.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="icon" href="img/logo.png" />
-    </head>
+</head>
+        <header>
+  
+
+  <nav class="navbar">
+
+
+  <div class="nav-left">
+    <img src="img/logo.png" class="logo" />
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="html/products_and_details.html">Shop</a></li>
+      <li><a href="html/wishlist.html">Wishlist</a></li>
+      <li><a href="html/offers.html">Offers</a></li>
+      <li><a href="html/bundles.html">Bundles</a></li>
+      <li><a href="html/about_us.html">About us</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <input placeholder="Search..." />
+   <a href="html/cart.html" class="cart-link">
+  <i class="fa-solid fa-cart-shopping"></i>
+</a>
+<div class="user-menu">
+  <button class="user-btn" onclick="toggleMenu(event)">
+    <i class="fa-solid fa-user"></i>
+  </button>
+
+  <div class="dropdown" id="menu">
+    <a href="html/login.html">Sign-in</a>
+    <a href="html/signup.html">Sign-Up</a>
+    <a href="index.html">Sign-Out</a>
+  </div>
+</div>
+    <button><i class="fa-solid fa-moon"></i></button>
+  </div>
+
+</nav>
+</header>
+    
 
     <body>
-        <header>
-            <div>
-                <img src="img/logo.png" alt="logo" />
-                <nav>
-                    <div class="search-container">
-                        <input list="search" placeholder="Search For..." />
-                        <datalist id="search">
-                            <option value="candles"></option>
-                             <option value="Berry Blush"></option>
-                             <option value="Rose Whisper"></option>
-                             <option value="Mocha Chill"></option>
-                             <option value="Dreamy Lavender"></option>
-                            <option value="dry oils"></option>
-                             <option value="Relax Bloom"></option>
-                             <option value="Strawberry Kiss"></option>
-                             <option value="Rosy Dream"></option>
-                             <option value="Amber Soul"></option>
-                            <option value="offers"></option>
-                            <option value="The Serenity Bundle"></option>
-                            <option value="Arabica & Musk Harmony"></option>
-                            <option value="Romantic Petals Set"></option>
-                            <option value="Berry Bliss Duo"></option>
-                                <option value="bundles"></option>
-                            <option value="Velvet Bloom Lavender Set"></option>
-                            <option value="Warm Awakening Routine"></option>
-                            <option value="The Aesthetic Pink Kit"></option>
-                             <option value="Sweet Berry Routine"></option>
-                        </datalist>
-                    </div>
+       
 
-                    <div class="dropdown">
-                        <button class="profile-btn" id="profileBtn">
-                            <span id="userName">👤 Profile</span>
-                        </button>
-                    <ul class="dropdown-menu" id="dropdownMenu">
-                        <li><a href="html/login.html">Sign in</a></li>
-                        <li><a href="html/signup.html">Sign up</a></li>
-                        <li><hr></li>
-                       <li><button id="logoutBtn">Sign out</button></li>
-                    </ul>
-                </div>
-                    <div class="cart-container">
-                        <a href="html/cart.html" class="cart">🛒</a>
-                        <span id="cart-count" class="cart-badge">0</span>
-                    </div>
-                    <div class="dropdown">
-                        <button class="theme-btn" id="themeBtn">🌓</button>
-
-                        <ul class="dropdown-menu" id="themeMenu">
-                          <li><button id="lightMode">Light Mode</button></li>
-                        <li><button id="darkMode">Dark Mode</button></li>
-                        </ul>
-                    </div>
-                    <div class="menu-container">
-                        <button class="menu-icon" id="openMenu">☰</button>
-
-                        <div class="side-menu" id="sideWindow">
-                            <button class="close-btn" id="closeMenu">&times;</button>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="html/products_and_details.html">Shop</a></li>
-                                <li><a href="html/wishlist.html">⭐Wishlist</a></li>
-                                <li><a href="html/offers.html">Offers</a></li>
-                                <li><a href="html/bundles.html">Bundles</a></li>
-                                <li><a href="html/about_us.html">About us</a></li>
-                            </ul>
-                        </div>
-                        <div class="overlay" id="overlay"></div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <hr />
 
         <main>
+
             <section class="hero">
                 <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Soft glow</h1>
-                        <h2>Strong vibe</h2>
-                        <p class="description">
-                        Shop our collecion of handcrafted candles <br />
-                        and dry oils, crafted with love and care.
-                        </p>
+                    <img src="img/home.png">
                     </div>
-
-                    <div class="image">
-                        <img src="img/homepicture.png" alt="Handcrafted candles and oils" />
-                    </div>
-                </div>
             </section>
         </hr>
             <section class="categories">
@@ -153,5 +114,6 @@
             </div>
         </footer>
         <script src="javascript/index.js"></script>
+          <script src="javascript/navbar.js"></script>
     </body>
 </html>

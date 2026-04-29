@@ -1,125 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>checkout</title>
-    </head>
-    
-    <body>
-        
-           <header>
-              <nav>
-                 <img src="logo.png" alt="logo" width="100">
-                 <a href="index.html">home</a>
-              </nav>
-           </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
 
-              <hr>
-        
-          <main>
-          
-           <h1>checkout</h1>
-           
-           <form>
-               <section> 
-                   <fieldset>
-                       <legend>Contact Information</legend>
-                          <table>
-                              
-                              <tr>
-                                 <td><label for="name1">First name</label></td>
-                                 <td><input type="text" id="name1" required></td>
-                             </tr> 
-                              
-                             <tr>
-                                  <td><label for="name2">Last name</label></td>
-                                  <td><input type="text" id="name2" required ></td>
-                            </tr>
-                              
-                             <tr>
-                                 <td><label for="email">Email</label></td>
-                                 <td><input type="email" id="email" required></td>
-                            </tr>
-                
-                               <tr>
-                                 <td><label for="phone">Phone Number</label></td>
-                                <td><input type="tel" id="phone" required></td>
-                              </tr>
-               
-                        </table>
-                 </fieldset>
-            </section>
+<body>
 
-                   
-           <hr id="line">
+<header>
+    <nav>
+        <img src="logo.png" alt="logo" width="100">
+        <a href="index.html">Home</a>
+    </nav>
+</header>
 
-          <section>
-              <fieldset>
+<main>
+
+    <h1>Checkout</h1>
+
+    <form>
+
+        <!-- Contact Information -->
+        <section>
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <table>
+                    <tr>
+                        <td><label for="first_name">First Name</label></td>
+                        <td><input type="text" id="first_name" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="last_name">Last Name</label></td>
+                        <td><input type="text" id="last_name" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="phone">Phone Number</label></td>
+                        <td><input type="tel" id="phone" required></td>
+                    </tr>
+                </table>
+
+            </fieldset>
+        </section>
+
+        <!-- Shipping Information -->
+        <section>
+            <fieldset>
                 <legend>Shipping Information</legend>
-                  
-                  <table>
-                   <tr>
-                      <td><label for="cnt">country</label></td> 
-                      <td><input type="text" id="cnt" required ></td>
-                   </tr>
 
-                  <tr>
-                      <td><label for="city">city</label></td>
-                      <td><input type="text" id="city" required ></td>
-                  </tr>
+                <table>
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td><input type="text" id="country" required></td>
+                    </tr>
 
-                 <tr>
-                     <td><label for="add">address</label></td>
-                     <td><input type="text" id="add" required ></td>
-                 </tr>
-                      
-                  </table>
-               </fieldset>
-           </section> 
+                    <tr>
+                        <td><label for="city">City</label></td>
+                        <td><input type="text" id="city" required></td>
+                    </tr>
 
-           <section>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td><input type="text" id="address" required></td>
+                    </tr>
+                </table>
+
+            </fieldset>
+        </section>
+
+        <!-- Payment Method -->
+        <section>
             <fieldset>
                 <legend>Payment Method</legend>
-                
-                 <table>
-                   <tr>
-                       <td><input type="radio" name="payment" id="cash" value="cash" required></td>
-                       <td> <label for="cash">Cash on Delivery</label></td>
-                   </tr>
-           
-                  <tr>
-                      <td><input type="radio" value="visa" name="pay" id="visa" required></td>
-                      <td><label for="viza">visa</label></td>
-                  </tr>
 
-                  <tr>
-                      <td><label for="card_number">Card Number</label></td>
-                      <td><input type="number" id="card_number" class="visa-field" disabled></td>
-                  </tr>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="payment" id="cash" value="cash" required>
+                            <label for="cash">Cash on Delivery</label>
+                        </td>
+                    </tr>
 
-                  <tr>
-                       <td><label for="exp">Exp. Date</label></td>
-                      <td><input type="month" id="exp" class="visa-field" disabled></td>
-                </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="payment" id="visa" value="visa" required>
+                            <label for="visa">Visa</label>
+                        </td>
+                    </tr>
 
-                <tr>
-                     <td><label for="cvv">CVV</label></td>
-                     <td><input type="number" id="cvv" class="visa-field" disabled></td>
-                </tr>
-             
-           
-              
-           <h2>total price items</h2>
-           <h2> delivery cost</h2>
-           <h2>total to pay</h2>
-            <br>
-           <input type="submit" value="pay now" id="pay" >
-         </form>
-         </main>     
-         <hr>
-         <footer>
-            <a href="about us .html">about us</a>
-         </footer>
-    </body>
+                    <tr>
+                        <td><label for="card_number">Card Number</label></td>
+                        <td><input type="number" id="card_number" disabled></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="exp">Exp. Date</label></td>
+                        <td><input type="month" id="exp" disabled></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="cvv">CVV</label></td>
+                        <td><input type="number" id="cvv" disabled></td>
+
+                    </tr>
+                </table>
+
+            </fieldset>
+        </section>
+
+        <!-- Price Summary -->
+        <section>
+            <fieldset>
+                <legend>Order Summary</legend>
+
+                <table>
+                    <tr>
+                        <td>Total Price Items</td>
+                        <td>500 L.E</td>
+                    </tr>
+
+                    <tr>
+                        <td>Delivery Cost</td>
+                        <td>50 L.E</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Total to Pay</strong></td>
+                        <td><strong>550 L.E</strong></td>
+                    </tr>
+                    <tr>
+                      <td><input type="submit" value="Pay Now"></td>
+                    </tr>
+                </table>
+
+            </fieldset>
+        </section>
+
+        <br>
+     </form>
+
+</main>
+
+<footer>
+    <a href="about.html">About Us</a>
+</footer>
+
+</body>
 </html>

@@ -34,6 +34,11 @@ h2{
 .checkout:hover{
     background-color: #b08968;
 }
+.cart_totals a{
+    text-decoration: none;
+    color: #858383;
+    font-size:17px ;
+}
 .page_name{
     font-size: larger;
     font-family: Georgia;

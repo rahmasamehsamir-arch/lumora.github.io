@@ -3,80 +3,160 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Shop handcrafted candles and natural dry oils at Lumora. Create a cozy, relaxing atmosphere with our premium scented products."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="img/logo.png" />
   <title>Lumora-About-Us</title>
-
+  <link rel="stylesheet" href="../css/navbar-footer.css" />
   <style>
     body {
-      font-family:Georgia, 'Times New Roman', Times, serif
-      margin: 20px;
-      background: #f5f0e1
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      background: #f5f0e1;
+    }
+    .about-text {
+      text-align: justify;
+      text-indent: 20px;
+      line-height: 1.8;
     }
 
     h2 {
+      color: #5a4a3f;
       margin-top: 30px;
+      text-align: center;
     }
 
     iframe {
-      width: 100%;
-      height: 300px;
+      display: block;
+      margin: 20px auto;
+      width: 50%;
+      height: 100px;
       border-radius: 10px;
-      border: none;
+      border: none
+    }
+    .location {
+      padding: 50px 60px;
+    }
+    
+    .media-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .media-container div {
+      flex: 1;
     }
 
     audio, video {
-      width: 100%;
+      display: block;
+      margin: 20px auto;
+      width: 90%;
+      height: 90%;
       margin-top: 10px;
+      margin-bottom: 40px;
+      border-radius: 8px;
     }
 
     img {
-      width: 100%;
-      max-width: 500px;
+      display: block;
+      margin: 20px auto;
+      margin-bottom: 50px;
+      max-width: 90%;
       border-radius: 10px;
+      transition: 0.3s;
     }
   </style>
+
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="../img/logo.png" class="logo" />
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../html/products_and_details.html">Shop</a></li>
+        <li><a href="../html/wishlist.html">Wishlist</a></li>
+        <li><a href="../html/offers.html">Offers</a></li>
+        <li><a href="../html/bundles.html">Bundles</a></li>
+        <li><a href="../html/about_us.html">About us</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <input placeholder="Search..." />
+      <a href="cart.html" class="cart-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    <div class="user-menu">
+      <button class="user-btn" onclick="toggleMenu(event)">
+        <i class="fa-solid fa-user"></i>
+      </button>
 
+      <div class="dropdown" id="menu">
+        <a href="login.html">Sign-in</a>
+        <a href="signup.html">Sign-Up</a>
+        <a href="../index.html"><span>Sign-Out</span></a>
+      </div>
+    </div>
+    <button class="mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+    </div>
+  </nav>
 
+  <section class="about">
   <h2>About Lumora</h2>
-  <p>
-  Lumora is a unique and inspiring brand that specializes in premium candles and luxurious dry oils. Built on passion and creativity, Lumora stands out for its dedication to quality, elegance, and attention to detail in every product.
+  <p class="about-text">
+    Lumora is a unique and inspiring brand that specializes in premium candles and luxurious dry oils. Built on passion and creativity, Lumora stands out for its dedication to quality, elegance, and attention to detail in every product.
 
-What makes Lumora truly special is the team behind it—only eight young ladies who carefully design, craft, and perfect each item. Their work reflects not just skill, but also a deep love for what they create. Every candle is thoughtfully made to provide a calming atmosphere, while the dry oils are designed to nourish the skin with a light, silky finish.
+    What makes Lumora truly special is the team behind it—only eight young ladies who carefully design, craft, and perfect each item. Their work reflects not just skill, but also a deep love for what they create. Every candle is thoughtfully made to provide a calming atmosphere, while the dry oils are designed to nourish the skin with a light, silky finish.
 
-Lumora combines simplicity with sophistication, offering products that bring comfort, beauty, and a touch of luxury to everyday life. It’s more than just a brand—it’s a story of ambition, teamwork, and creativity turned into something meaningful.
-
-
+    Lumora combines simplicity with sophistication, offering products that bring comfort, beauty, and a touch of luxury to everyday life. It’s more than just a brand—it’s a story of ambition, teamwork, and creativity turned into something meaningful.
   </p>
+  </section>
 
-
+  <section class="product"></section>
   <h2>Explore Lumora Products</h2>
-
   <img src="../img/lumorabliss.jpeg" alt="Lumora Products" usemap="#lumora-map">
+  </section>
+
+  <section class="media">
+    <div class="media-container">
+      <div>
+        <h2>Video</h2>
+        <video controls>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <h2>Audio</h2>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </section>
 
   <map name="lumora-map">
-   
     <area shape="rect" coords="0,0,250,250" href="bundles.html" alt="Bundles">
-
     <area shape="rect" coords="250,0,500,250" href="offers.html" alt="Offers">
   </map>
-
-
+  <section class="location">
   <h2>Location</h2>
   <iframe src="https://www.google.com/maps?q=Helwan+University&output=embed"></iframe>
+  </section>
 
 
-  <h2>Audio</h2>
-  <audio controls>
-    <source src="audio.mp3" type="audio/mpeg">
-  </audio>
-
-
-  <h2>Video</h2>
-  <video controls>
-    <source src="video.mp4" type="video/mp4">
-  </video>
-
+  <footer>
+    <p>© 2026 Lumora. All rights reserved.</p>
+    <p>Follow us on our social media</p>
+    <div class="social-icons">       
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>       
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>        
+      <a href="mailto:support@lumora.com"><i class="fa-solid fa-envelope"></i></a>    
+    </div>
+  </footer>
+  <script src="../javascript/navbar.js"></script>
 </body>
 </html>

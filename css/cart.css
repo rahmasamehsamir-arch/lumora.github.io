@@ -14,15 +14,22 @@ main{
     width: 60%;
 }
 .cart_totals{
-    width: 40%;text-align: center;
+    width: 40%;
+    text-align: center;
+    background: #f3e9d7;
+  padding: 20px;
+  border-radius: 6px;
 }
 h2{
     font-size: xx-large;
     margin-top: 0px;
-    background-color: #f3e9d7;
+    padding: 5px;
     border-bottom: 2px solid #ddd;
-    padding: 2px;
     
+}
+.total_row {
+  font-weight: bold;
+  font-size: 20px;
 }
 .checkout{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -30,6 +37,9 @@ h2{
     border: none;
     padding: 10px;
     background-color: #d6bfa6;
+    width: 50%;
+    margin: auto;
+    font-size: large;
 }
 .checkout:hover{
     background-color: #b08968;
@@ -38,6 +48,16 @@ h2{
     text-decoration: none;
     color: #858383;
     font-size:17px ;
+    margin-top: 5px;
+}
+.cart_totals a:hover{
+    color: #7a553a;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
 }
 .page_name{
     font-size: larger;
@@ -107,6 +127,7 @@ border-radius: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #7a553a;
   flex-direction: column;
+  width: 60%;
   
 }
 input{
@@ -152,6 +173,7 @@ input:focus{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #7a553a;
   flex-direction: column;
+  width: 40%;
 }
 .wishlist a{
     text-decoration: none;

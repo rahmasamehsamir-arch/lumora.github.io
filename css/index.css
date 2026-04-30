@@ -41,11 +41,12 @@
 
 
 
-.categories h2 {
+.categories h2 , .reviews h2{
   text-align: center;
   margin-top: 80px;
   margin-bottom: 20px;
   font-size: 40px;
+  color: #5b4f2c;
 }
 
 .categories-container {
@@ -60,23 +61,65 @@
     width: 600px;
     height: 120px;
     border-radius: 15px;
-
-    background-image: url("../img/"); 
-
+    background: #f8f5f2; 
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-decoration: none;
-    color: #333;
+    color: #d8a548;
     font-size: 30px;
     font-weight: bold;
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+.categories span {
+  background-color: transparent;
+}
 
 /* Hover effect */
 .category-item:hover {
+    color: #746639;
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
+.reviews {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.review-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.review {
+    display: none;   
+}
+
+.review img {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.review.active {
+    display: block; 
+}
+.prev , .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: -40px; }
+.next { right: -40px; }

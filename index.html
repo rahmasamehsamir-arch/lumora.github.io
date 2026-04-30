@@ -45,7 +45,9 @@
     <a href="index.html"><span>Sign-Out</span></a>
   </div>
 </div>
-    <button><i class="fa-solid fa-moon"></i></button>
+    <button class="mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
   </div>
 
 </nav>
@@ -85,6 +87,7 @@
             <section class="reviews">
                 <h2>Customer Reviews</h2>
                 <div class="review-container">
+                    <button class="prev" onclick="changeReview(-1)">&#10094;</button>
                     <div class="review">
                         <img src="img/review(1).jpeg" alt="Review">
                     </div>
@@ -100,6 +103,7 @@
                     <div class="review">
                         <img src="img/review(5).jpeg" alt="Review">
                     </div>
+                    <button class="next" onclick="changeReview(1)">&#10095;</button>
                 </div>
             </section>
 

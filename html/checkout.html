@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
     <title>Checkout</title>
 </head>
 
 <body>
-
-<header>
-    <nav>
-        <img src="logo.png" alt="logo" width="100">
-        <a href="index.html">Home</a>
-    </nav>
-</header>
-
 <main>
+    <div>
+        <h1 style="font-size:50px ;" >Checkout</h1>
 
-    <h1>Checkout</h1>
-
-    <form>
+    </div>
+    <form >
 
         <!-- Contact Information -->
-        <section>
+        <section >
             <fieldset>
-                <legend>Contact Information</legend>
+                <legend  >Contact Information</legend>
 
-                <table>
+                <table id="TableContactInformation">
                     <tr>
                         <td><label for="first_name">First Name</label></td>
                         <td><input type="text" id="first_name" required></td>
@@ -52,9 +46,9 @@
         </section>
 
         <!-- Shipping Information -->
-        <section>
+        <section >
             <fieldset>
-                <legend>Shipping Information</legend>
+                <legend >Shipping Information</legend>
 
                 <table>
                     <tr>
@@ -84,14 +78,14 @@
                 <table>
                     <tr>
                         <td>
-                            <input type="radio" name="payment" id="cash" value="cash" required>
+                            <input type="radio" name="payment" id="cash" value="cash" >
                             <label for="cash">Cash on Delivery</label>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input type="radio" name="payment" id="visa" value="visa" required>
+                            <input type="radio" name="payment" id="visa" value="visa" >
                             <label for="visa">Visa</label>
                         </td>
                     </tr>
@@ -117,9 +111,9 @@
         </section>
 
         <!-- Price Summary -->
-        <section>
+        <section >
             <fieldset>
-                <legend>Order Summary</legend>
+                <legend >Order Summary</legend>
 
                 <table>
                     <tr>
@@ -143,15 +137,8 @@
 
             </fieldset>
         </section>
-
-        <br>
-     </form>
+   </form>
 
 </main>
-
-<footer>
-    <a href="about.html">About Us</a>
-</footer>
-
 </body>
 </html>

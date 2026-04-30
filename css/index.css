@@ -33,3 +33,47 @@
 .hero {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+
+
+
+
+.categories h2 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.categories-container {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.category-item {
+    width: 600px;
+    height: 120px;
+    background: #f5f5f5; /* تقدري تغيريها أو تحطي صورة */
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Hover effect */
+.category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

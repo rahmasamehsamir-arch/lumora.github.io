@@ -1,28 +1,31 @@
+
+           
 <!doctype html>
 <html>     
     <head>
         <meta charset='UTF-8'/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lumora-Login Page</title>
+        <link rel="stylesheet" href="../css/login.css">
+        <title>Lumora-login page</title>
     </head>
     <body>
-        <header><p>Welcome Back !</p>
-        <p>Please login to your account</p></header>
         <main>
+        <header><p class="wel">Welcome back !</p>
+        <p class="please">Please login to your account</p></header>
         <section>
         <form>
-            <label>Email</label><br>
-            <input type="Email" >
-            <br>
-            <lable>Password</lable><br>
-            <input type="password" ><br>
+            <lable class="mail">Email</lable>
+            <input class="in_mail" type="Email" > 
+        
+            <lable class="word">password</lable>
+            <input class="in_word" type="password" ><br>
             <input type="checkbox">
-            <lable>remember me!</lable>
-            <a href="password.html">Forget password</a><br>
+            <lable class="remember">Remember me !</lable>
+            <a href="foregetPassword.html" class="forget">Forget password?</a>
             <button type="submit">login</button>
         </form>
         </section>
-        <p>Don't have an account?<a href="signup.html">sign up</a></p>
+        <p class="not">Don't have an account?<a href="signup.html" class="sign">sign up</a></p>
         </main>
     </body>
 </html>

@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!layoutBtn || !categories) return;
 
-  /* LOAD */
+
   if (localStorage.getItem("layout") === "alt") {
     categories.classList.add("alt-layout");
   }
 
-  /* CLICK */
+
   layoutBtn.onclick = () => {
     categories.classList.toggle("alt-layout");
 

@@ -106,21 +106,33 @@ button {
 .remove:hover{
     color: #d6bfa6;
 }
+.quantity {
+  display: flex;
+  align-items: center;
+  border: #d6bfa6 solid 1px;
+  border-radius: 5px;
+  padding: 3px 8px;
+  width: fit-content;
+}
 
 .quantity button {
-  padding: 5px 6px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  border-radius: 10px;
 }
-.minus,
-.plus{border: none;
-background-color: #d6bfa6;
-border-radius: 10px;
+.quantity span {
+  margin: 0 8px;
+  font-size: 14px;
 }
+
 .minus:hover{
-    background-color: #b08968;
+   color: #b08968;
 }
 .plus:hover{
-    background-color: #b08968;
+    color: #b08968;
 }
+ 
 .coupon{
     padding: 10px 0px 0px 20px;
     font-size: large;
@@ -183,4 +195,16 @@ input:focus{
 }
 .wishlist a:hover{
     color: #7a553a;
+}
+.promo_message {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.promo_message.success {
+  color: green;
+}
+
+.promo_message.error {
+  color: red;
 }

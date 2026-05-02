@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="checkout.css">
     <title>Checkout</title>
 </head>
 
 <body>
 <main>
     <div>
-        <h1 style="font-size:50px ;" >Checkout</h1>
+        <h1 style="font-size:50px;">Checkout</h1>
 
     </div>
-    <form >
-
-        <!-- Contact Information -->
-        <section >
+    <div class="orginze">
+     <div class="left">
+        <form class="l">
+        <section>
             <fieldset>
-                <legend  >Contact Information</legend>
+                <legend><img src="contact.jpg" width="40px"> <u>Contact Information:</u></legend>
 
                 <table id="TableContactInformation">
                     <tr>
@@ -45,10 +45,9 @@
             </fieldset>
         </section>
 
-        <!-- Shipping Information -->
-        <section >
+        <section>
             <fieldset>
-                <legend >Shipping Information</legend>
+                <legend><img src="shipping.jpg" width="40px"> <u>Shipping Information:</u></legend>
 
                 <table>
                     <tr>
@@ -66,14 +65,17 @@
                         <td><input type="text" id="address" required></td>
                     </tr>
                 </table>
-
             </fieldset>
         </section>
 
-        <!-- Payment Method -->
-        <section>
+       
+    </form> 
+    </div>
+    <div class="right">
+        <form class="r">
+         <section>
             <fieldset>
-                <legend>Payment Method</legend>
+                <legend><img src="pay.jpg" width="40px"> <u>Payment Method:</u></legend>
 
                 <table>
                     <tr>
@@ -89,7 +91,7 @@
                             <label for="visa">Visa</label>
                         </td>
                     </tr>
-
+                    <div class="i.visa">
                     <tr>
                         <td><label for="card_number">Card Number</label></td>
                         <td><input type="number" id="card_number" disabled></td>
@@ -105,16 +107,14 @@
                         <td><input type="number" id="cvv" disabled></td>
 
                     </tr>
+                    </div>
                 </table>
 
             </fieldset>
-        </section>
-
-        <!-- Price Summary -->
-        <section >
+        </section>   
+        <section>
             <fieldset>
-                <legend >Order Summary</legend>
-
+              <legend><img src="order.jpg" width="40px"> <u>Order Summary:</u></legend>
                 <table>
                     <tr>
                         <td>Total Price Items</td>
@@ -130,15 +130,20 @@
                         <td><strong>Total to Pay</strong></td>
                         <td><strong>550 L.E</strong></td>
                     </tr>
-                    <tr>
-                      <td><input type="submit" value="Pay Now"></td>
-                    </tr>
+                    
+                       
                 </table>
 
             </fieldset>
         </section>
-   </form>
-
+        </form>
+    </div>
+    </div>
+    <div class="submit">
+        <input type="submit" value="Pay Now"></td>
+    </div>
+    
+        
 </main>
 </body>
 </html>

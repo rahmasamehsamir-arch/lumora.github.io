@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/checkout.css">
-    <title>Lumora-Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <title>Checkout</title>
 </head>
 
 <body>
@@ -13,12 +13,12 @@
         <h1 style="font-size:50px;">Checkout</h1>
 
     </div>
-    <div class="orginze">
+    <div class="organize">
      <div class="left">
         <form class="l">
         <section>
             <fieldset>
-                <legend><img src="../img/contact.jpg" width="40px"> <u>Contact Information:</u></legend>
+                <legend><img src="contact.png" width="40px"> <u>Contact Information:</u></legend>
 
                 <table id="TableContactInformation">
                     <tr>
@@ -47,7 +47,7 @@
 
         <section>
             <fieldset>
-                <legend><img src="../img/shipping.jpg" width="40px"> <u>Shipping Information:</u></legend>
+                <legend><img src="shipping.png" width="40px"> <u>Shipping Information:</u></legend>
 
                 <table>
                     <tr>
@@ -75,7 +75,7 @@
         <form class="r">
          <section>
             <fieldset>
-                <legend><img src="../img/pay.jpg" width="40px"> <u>Payment Method:</u></legend>
+                <legend><img src="pay.png" width="40px"> <u>Payment Method:</u></legend>
 
                 <table>
                     <tr>
@@ -91,44 +91,44 @@
                             <label for="visa">Visa</label>
                         </td>
                     </tr>
-                    <div class="i.visa">
-                    <tr>
+                    
+                    <tr class="inf-visa">
                         <td><label for="card_number">Card Number</label></td>
-                        <td><input type="number" id="card_number" disabled></td>
+                        <td><input type="number" id="card_number"></td>
                     </tr>
 
-                    <tr>
+                    <tr class="inf-visa">
                         <td><label for="exp">Exp. Date</label></td>
-                        <td><input type="month" id="exp" disabled></td>
+                        <td><input type="month" id="exp"></td>
                     </tr>
 
-                    <tr>
+                    <tr class="inf-visa">
                         <td><label for="cvv">CVV</label></td>
-                        <td><input type="number" id="cvv" disabled></td>
+                        <td><input type="number" id="cvv"></td>
 
                     </tr>
-                    </div>
+                    
                 </table>
 
             </fieldset>
         </section>   
         <section>
             <fieldset>
-              <legend><img src="../img/order.jpg" width="40px"> <u>Order Summary:</u></legend>
+              <legend><img src="order.png" width="40px"> <u>Order Summary:</u></legend>
                 <table>
                     <tr>
                         <td>Total Price Items</td>
-                        <td>500 L.E</td>
+                        <td id="items">0</td>
                     </tr>
 
                     <tr>
                         <td>Delivery Cost</td>
-                        <td>50 L.E</td>
+                        <td id="delivery">50</td>
                     </tr>
 
                     <tr>
                         <td><strong>Total to Pay</strong></td>
-                        <td><strong>550 L.E</strong></td>
+                        <td id="total"><strong>50</strong></td>
                     </tr>
                     
                        
@@ -136,14 +136,15 @@
 
             </fieldset>
         </section>
+       
         </form>
     </div>
     </div>
-    <div class="submit">
-        <input type="submit" value="Pay Now"></td>
-    </div>
-    
+    <form onsubmit="goToPage(); return false;">
+         <input type="submit" value="Pay Now">
+    </form>
         
 </main>
+<script src="checkout.js"></script>
 </body>
 </html>

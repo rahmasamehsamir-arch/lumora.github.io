@@ -36,5 +36,5 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function goToPage(){
-    window.location.href = "shipping.html";
+    window.location.href = "../html/shipping.html";
 }

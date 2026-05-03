@@ -48,9 +48,9 @@ function displayCart() {
         <div class="unit_price">${item.price} EGP</div>
 
         <div class="quantity">
-          <button onclick="changeQty(${index}, -1)">-</button>
+          <button class="minus" onclick="changeQty(${index}, -1)">-</button>
           <span>${item.quantity}</span>
-          <button onclick="changeQty(${index}, 1)">+</button>
+          <button class="plus" onclick="changeQty(${index}, 1)">+</button>
         </div>
 
         <div class="total">

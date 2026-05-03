@@ -127,7 +127,7 @@ function setupCoupon() {
       message.innerText = "Promo code applied successfully!";
       message.className = "promo_message success";
     } else {
-      message.innerText = "Invalid or already used code!";
+      message.innerText = "Invalid Promo code.";
       message.className = "promo_message error";
     }
   });

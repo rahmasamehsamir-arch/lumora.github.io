@@ -96,6 +96,7 @@ function updateTotal() {
   if (totalBox) {
     totalBox.innerText = total + " EGP";
   }
+  localStorage.setItem("cartTotal", total);
 }
 
 /* ========== COUPON ========== */
@@ -113,7 +114,7 @@ function setupCoupon() {
     let message = document.querySelector(".promo_message");
 
     let totalBox = document.querySelector(".total_row span:last-child");
-    let total = parseFloat(totalBox.innerText.replace("EGP", ""));
+    let total = parseFloat(totalBox.innerText.replace("EGP", "").trim());
 
     if (code === "LUMORA10" && !promoApplied) {
       promoApplied = true;
@@ -122,7 +123,7 @@ function setupCoupon() {
       total -= discount;
 
       totalBox.innerText = total + " EGP";
-
+      localStorage.setItem("cartTotal", total);
       message.innerText = "Promo code applied successfully!";
       message.className = "promo_message success";
     } else {

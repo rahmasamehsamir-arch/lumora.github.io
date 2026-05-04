@@ -2,89 +2,138 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-}
-body{
-    background-color: #F5F0E1;
 }
 
-div.h1{
-    text-align: center;
-    padding-top: 10px;
+body{
+    background-color: #F5F0E1;
+    font-family: Arial, sans-serif;
 }
+
+
+div.title{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.h1{
+    font-size: 30px;
+}
+
+div.title p{
+    margin-top: 5px;
+    color: #555;
+}
+
+
 div.all{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 20px;
-    
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
 }
+
+
+div.all > div{
+    width: 320px;
+    background-color: #B08968;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+div.all > div:hover{
+    transform: scale(1.03);
+}
+
+
 div.img img{
-width: 400px;
-border-radius: 20px;
-margin-top: 10px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
 }
-div.icon img{
-    width: 40px;
-    outline: none;
-    height: 35px;
-    background-color: #F5F0E1;
+
+
+div.icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
 }
+
 div.icon button{
-    flex: 1;             
-    border: none;      
-    display: flex;       
-    justify-content: center; 
-    align-items: center;
-    background-color: #F5F0E1;
-     width: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+div.icon img{
+    width: 35px;
     height: 35px;
 }
+
 div.icon button:hover{
-    opacity: 0.5;
+    opacity: 0.6;
 }
-div.icon {
-    display: flex;       
-    width: 100%;        
-    height: 50px;
-}
+
+
 div.word{
     text-align: center;
-    padding: 10px;
-    background-color:#B08968;
-    border-radius: 20px;
-    
+    padding: 15px;
 }
-h1.h1{
-    font-size: 30px;
+
+div.word h2{
+    font-size: 18px;
+    margin-bottom: 5px;
 }
-div.title{
-    text-align: center;
-    width: 300px;
-    margin: auto;
-    margin-top: 10px;
+
+div.word h3{
+    font-size: 16px;
+    font-weight: normal;
 }
+
 div.javabutton{
     display: flex;
-    margin-top: 10px;
     justify-content: center;
     align-items: center;
-    }
+    margin-top: 10px;
+    gap: 10px;
+}
+
 div.quantity h3{
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
 }
+
 div.threebuttons{
-    margin-left: 15px;
-    border: dotted 1.5px #F5F0E1;
-    border-radius: 5PX;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100px;
-height: 30px;
+    height: 30px;
+    border: 1.5px dotted #F5F0E1;
+    border-radius: 6px;
+    padding: 0 5px;
 }
+
 div.threebuttons button{
-background-color:transparent;
-border: none;
-padding: 3px;
-width: 40px;
-height: 25px;
+    background: transparent;
+    border: none;
+    width: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.count{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+    div.img img{
+        height: 240px;
+    }
 }

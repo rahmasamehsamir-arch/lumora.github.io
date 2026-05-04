@@ -1,9 +1,10 @@
 body{
     background-color: #F5F0E1;
-    min-height: 100vh;
+    
 }
 main{
-    margin:70px;
+    margin:40px 70px 70px 70px;
+    min-height: 100vh;
 }
 .everything{
     display: flex;
@@ -27,7 +28,7 @@ h2{
     border-bottom: 2px solid #ddd;
     
 }
-.total_row {
+.total_row{
   font-weight: bold;
   font-size: 20px;
 }

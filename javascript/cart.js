@@ -1,16 +1,12 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-/* ========== INIT ========== */
 document.addEventListener("DOMContentLoaded", () => {
   displayCart();
   setupCoupon();
 });
 
-/* ========== DISPLAY CART ========== */
 function displayCart() {
   const container = document.querySelector(".products");
 
-  // reset container
   container.innerHTML = `
     <div class="products_header">
       <span></span>
@@ -22,10 +18,9 @@ function displayCart() {
     </div>
   `;
 
-  // EMPTY STATE
   if (cart.length === 0) {
     container.innerHTML += `
-      <div style="text-align:center; padding:30px; font-size:18px; color:#777;">
+      <div style="text-align:center; padding:30px; font-size:18px; color:#aaa;">
         Your cart is empty!
       </div>
     `;
@@ -33,7 +28,6 @@ function displayCart() {
     return;
   }
 
-  // RENDER PRODUCTS
   cart.forEach((item, index) => {
     container.innerHTML += `
       <div class="product">
@@ -63,13 +57,12 @@ function displayCart() {
   updateTotal();
 }
 
-/* ========== REMOVE ITEM ========== */
 function removeItem(index) {
   cart.splice(index, 1);
   saveCart();
 }
 
-/* ========== CHANGE QUANTITY ========== */
+
 function changeQty(index, change) {
   cart[index].quantity += change;
 
@@ -80,13 +73,11 @@ function changeQty(index, change) {
   saveCart();
 }
 
-/* ========== SAVE + RELOAD UI (NO PAGE RELOAD) ========== */
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
   displayCart();
 }
 
-/* ========== TOTAL ========== */
 function updateTotal() {
   let total = cart.reduce((sum, item) => {
     return sum + item.price * item.quantity;
@@ -99,13 +90,17 @@ function updateTotal() {
   localStorage.setItem("cartTotal", total);
 }
 
-/* ========== COUPON ========== */
 function setupCoupon() {
+  const coupons = {
+  LUMORA10: 0.1,
+  LUMORA20: 0.2,
+  NEW15: 0.15
+};
   const form = document.querySelector(".coupon");
 
   if (!form) return;
 
-  let promoApplied = false;
+  let promoApplied = localStorage.getItem("promoApplied") === "true";
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -116,14 +111,20 @@ function setupCoupon() {
     let totalBox = document.querySelector(".total_row span:last-child");
     let total = parseFloat(totalBox.innerText.replace("EGP", "").trim());
 
-    if (code === "LUMORA10" && !promoApplied) {
+    if (cart.length === 0 || total === 0) {
+  message.innerText = "Cart is empty!";
+  message.className = "promo_message error";
+  return;
+}
+    if (coupons[code] && !promoApplied) {
       promoApplied = true;
 
-      let discount = total * 0.1;
+      let discount = total * coupons[code];
       total -= discount;
 
       totalBox.innerText = total + " EGP";
       localStorage.setItem("cartTotal", total);
+      localStorage.setItem("promoApplied", "true");
       message.innerText = "Promo code applied successfully!";
       message.className = "promo_message success";
     } else {

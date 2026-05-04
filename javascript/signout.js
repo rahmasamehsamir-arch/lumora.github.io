@@ -13,7 +13,6 @@ if(sign_out){
             localStorage.removeItem('logged');
             alert('Signed out successfully');
 
-            // hide again after logout
             sign_out.style.display = "none";
 
             window.location.href = "../index.html";

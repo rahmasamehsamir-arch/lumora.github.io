@@ -1,27 +1,31 @@
+header{
+    margin: 9px ;
+}
 *{
     margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
 }
 body{
     background-color: #F5F0E1;
 }
+main{
+    margin: 10px 50px 40px 50px;
+    justify-content: center;
+}
+
 
 .lavender, 
 .mocha,
 .rose,
 .strawberry,
 .lavenrose,
-.strawmocha,
-.candles,
-.oils{
-    display: flex;              
-    align-items: flex-start;   
-    justify-content: space-between;
-    gap: 10px; 
-    width: auto;                 
-    
+.strawmocha {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
 .lavender .img img,
 .mocha .img img,
 .rose .img img,
@@ -42,7 +46,6 @@ body{
 .candles .info,
 .oils .info{
     width:80%;
-    margin-right: 50px;
     width: auto;
     height: 400px;                 
     padding: 20px;

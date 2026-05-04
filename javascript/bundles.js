@@ -19,17 +19,18 @@ allProducts.forEach(product => {
         }
     });
 });
-
 let wishlistButtons = document.querySelectorAll(".wishlist-button");
 
 wishlistButtons.forEach(function(btn) {
 
     btn.addEventListener("click", function() {
 
+        let card = btn.closest(".info");
+
         let product = {
-            name: btn.parentElement.querySelector("h3").innerText,
-            price: btn.parentElement.querySelector("p").innerText,
-            image: btn.parentElement.querySelector("img").src
+            name: card.querySelector("h2").innerText,
+            price: card.querySelector(".price h3").innerText,
+            image: card.parentElement.querySelector("img").src
         };
 
         let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];

@@ -22,15 +22,13 @@ div.all{
 div.img img{
 width: 400px;
 border-radius: 20px;
-
 margin-top: 10px;
 }
 div.icon img{
-    width: 30px;
+    width: 40px;
     outline: none;
-    height: 30px;
-    width: 70px;
-    height: 70px;
+    height: 35px;
+    background-color: #F5F0E1;
 }
 div.icon button{
     flex: 1;             
@@ -38,7 +36,9 @@ div.icon button{
     display: flex;       
     justify-content: center; 
     align-items: center;
-    background-color: transparent !important;
+    background-color: #F5F0E1;
+     width: 40px;
+    height: 35px;
 }
 div.icon button:hover{
     opacity: 0.5;

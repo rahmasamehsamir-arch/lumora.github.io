@@ -1,11 +1,23 @@
-
 body {
-    background-color: #f5f0e1;
-    color: black;
-    transition: 0.3s;
+    background: #f5f0e1;
+    color: #222;
+}
+.navbar {
+    background: #f5f0e1;
 }
 
+.navbar a {
+    color: black;
+}
 body.dark {
-    background-color: #121212;
-    color:#f5f0e1; ;
+    background: #1f1b16;
+    color: #f5f0e1; 
+}
+
+body.dark .navbar {
+    background: #2a241d;
+}
+
+body.dark .navbar a {
+    color:#f5f0e1; 
 }

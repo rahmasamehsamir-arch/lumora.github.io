@@ -44,6 +44,6 @@ sign_up_button.addEventListener("click",function(event){
         password:pass
     };
     localStorage.setItem(mail,JSON.stringify(data_of_user));
-    window.location.href='index.html';
+    window.location.href='../index.html';
 
 });

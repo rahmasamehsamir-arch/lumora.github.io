@@ -2,7 +2,7 @@
 
 const body = document.body;
 const modeBtn = document.querySelector(".mode");
-const layoutBtn = document.querySelector(".layout-btn");
+const layoutBtn = document.querySelector(".layout");
 
 
 if (localStorage.getItem("mode") === "dark") {

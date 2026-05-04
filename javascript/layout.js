@@ -1,5 +1,4 @@
 
-
 const body = document.body;
 const modeBtn = document.querySelector(".mode");
 const layoutBtn = document.querySelector(".layout");
@@ -26,8 +25,10 @@ if (modeBtn) {
     });
 }
 
+
 if (layoutBtn) {
     layoutBtn.addEventListener("click", () => {
+
         body.classList.toggle("vertical");
 
         if (body.classList.contains("vertical")) {
@@ -35,5 +36,6 @@ if (layoutBtn) {
         } else {
             localStorage.setItem("layout", "horizontal");
         }
+
     });
 }

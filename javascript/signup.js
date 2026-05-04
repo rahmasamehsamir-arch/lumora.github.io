@@ -52,5 +52,5 @@ form.addEventListener("submit", function(event){
 
     alert("Account created successfully");
 
-    window.location.href = window.location.origin + "../index.html";
+    window.location.href = "../index.html";
 });

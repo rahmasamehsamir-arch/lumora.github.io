@@ -1,24 +1,27 @@
-const allProducts = document.querySelectorAll(".threebuttons");
+var allProducts = document.querySelectorAll(".threebuttons");
 
-allProducts.forEach(product => {
-    let count = 1;
+for (var i = 0; i < allProducts.length; i++) {
+    (function(product) {
+        var count = 1;
 
-    const plus = product.querySelector(".plus");
-    const minus = product.querySelector(".minus");
-    const span = product.querySelector(".count");
+        var plus = product.querySelector(".plus");
+        var minus = product.querySelector(".minus");
+        var span = product.querySelector(".count");
 
-    plus.addEventListener("click", function() {
-        count++;
-        span.textContent = count;
-    });
-
-    minus.addEventListener("click", function() {
-        if(count > 1){
-            count--;
+        plus.addEventListener("click", function() {
+            count++;
             span.textContent = count;
-        }
-    });
-});
+        });
+
+        minus.addEventListener("click", function() {
+            if (count > 1) {
+                count--;
+                span.textContent = count;
+            }
+        });
+
+    })(allProducts[i]);
+}
 let wishlistButtons = document.querySelectorAll(".wishlist-button");
 
 wishlistButtons.forEach(function(btn) {

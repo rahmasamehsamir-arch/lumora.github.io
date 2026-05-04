@@ -16,23 +16,11 @@ body{
     margin-bottom:30px;
     margin-top:30px;
 }
-a{
+.link>a{
     text-decoration:none;
     color:#3B2A22;
     margin:0;
     font-size:30px;
-}
-h3{
-    color:#7A8450;
-    margin:0;
-    font-size:30px;
-}
-img{
-    border-radius:100%;
-    vertical-align: middle;
-    height:50px;
-    width:50px;
-    
 }
 p{
     text-align:center;
@@ -40,7 +28,7 @@ p{
     font-size: 20px;
     margin-bottom: 10px;
 }
-a{
+p>a{
     text-decoration: none;
     color:#c0896e ;
 }

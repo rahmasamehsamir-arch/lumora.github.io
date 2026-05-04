@@ -4,7 +4,9 @@
     box-sizing: border-box;
    
 }
-
+body{
+    background-color: #F5F0E1;
+}
 
 div.h1{
     text-align: center;

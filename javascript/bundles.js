@@ -20,29 +20,29 @@ allProducts.forEach(product => {
     });
 });
 
-let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+let wishlistButtons = document.querySelectorAll(".wishlist-button");
 
-let buttons = document.querySelectorAll(".js");
+wishlistButtons.forEach(function(btn) {
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", function () {
+    btn.addEventListener("click", function() {
 
-   
-    let productCard = this.closest(".lavender, .mocha, .rose, .strawberry, .lavenrose, .strawmocha");
+        let product = {
+            name: btn.parentElement.querySelector("h3").innerText,
+            price: btn.parentElement.querySelector("p").innerText,
+            image: btn.parentElement.querySelector("img").src
+        };
 
-    let product = {
-      name: productCard.querySelector(".product h2")?.innerText || "No name",
-      price: productCard.querySelector(".price h3")?.innerText || "No price",
-      img: productCard.querySelector("img")?.getAttribute("src") || ""
-    };
+        let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
-    wishlist.push(product);
+        let exists = wishlist.some(function(item) {
+            return item.name === product.name;
+        });
 
-    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+        if (!exists) {
+            wishlist.push(product);
+            localStorage.setItem("wishlist", JSON.stringify(wishlist));
+        }
 
-    console.log(product); 
+    });
 
-    alert("Added to wishlist ❤️");
-  });
 });
-

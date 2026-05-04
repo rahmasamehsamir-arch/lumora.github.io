@@ -65,21 +65,21 @@ body.vertical.nav-right{
 
   
 body.vertical .cart-link,
-body.vertical .user-btn,
+body.vertical .user,
 body.vertical .mode {
   font-size: 22px;
 }
 
 
 body.vertical .cart-link,
-body.vertical .user-btn,
+body.vertical .user,
 body.vertical .mode {
   color: #222;
 }
 
 
 body.dark.vertical .cart-link,
-body.dark.vertical .user-btn,
+body.dark.vertical .user,
 body.dark.vertical .mode {
   color: #f5f0e1;
 }

@@ -30,12 +30,12 @@ body.dark.vertical .navbar {
   background: #1f1b16;
 }
 
-/* ===== LEFT SIDE ===== */
+
 body.vertical .nav-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px; /* 🔥 مسافة بين اللوجو واللينكات */
+  gap: 20px; 
 }
 
 
@@ -43,7 +43,7 @@ body.vertical .nav-links {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 10px; /* أقل من 30px */
+  margin-top: 10px; 
 }
 
 

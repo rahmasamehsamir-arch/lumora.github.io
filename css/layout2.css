@@ -1,4 +1,5 @@
 
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,7 +16,7 @@ body.vertical .navbar {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; 
 
   padding: 20px;
   overflow-y: auto;
@@ -25,32 +26,32 @@ body.vertical .navbar {
 body.vertical .navbar {
   background: #f5f0e1;
 }
-
 body.dark.vertical .navbar {
   background: #1f1b16;
 }
 
-
+/* ===== LEFT SIDE ===== */
 body.vertical .nav-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 20px; /* 🔥 مسافة بين اللوجو واللينكات */
 }
 
 
 body.vertical .nav-links {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 16px;
+  margin-top: 10px; /* أقل من 30px */
 }
 
 
 body.vertical .nav-right {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: auto;
+  gap: 16px;
+  margin-top: 30px; 
 }
 
 
@@ -84,13 +85,12 @@ body.vertical main {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 3000; /* 🔥 فوق كل حاجة */
+  z-index: 3000;
 
   background: #f5f0e1;
   padding: 10px;
   border-radius: 10px;
 }
-
 
 body.dark .layout-btn {
   background: #1f1b16;

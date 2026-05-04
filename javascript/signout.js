@@ -16,7 +16,7 @@ if(sign_out){
             // hide again after logout
             sign_out.style.display = "none";
 
-            window.location.href = "../index.html"; // use your correct path
+             window.location.href = window.location.origin + "../index.html";
         });
 
     } else {

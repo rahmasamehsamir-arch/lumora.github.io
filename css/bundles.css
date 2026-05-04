@@ -17,9 +17,8 @@ body{
 .oils{
     display: flex;              
     align-items: flex-start;   
-    justify-content: space-between;
-    gap: 10px; 
-    width: auto;                 
+    justify-content: flex-start;
+    gap: 50px;                  
     
 }
 .lavender .img img,
@@ -197,4 +196,10 @@ color: #fff;
 display: flex;
 justify-content: space-around;
 gap: 10px;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 20px;
 }

@@ -5,12 +5,34 @@
 }
 body{
     background:#F5F0E1;
-    font-family: Georgia;
+    font-family:Georgia;
 }
-h1{
-    text-align:center;
-    color:#462a1e ;
-    margin:40px;
+.link{
+    display:flex;
+    gap:10px;
+    margin-left:20px;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+a{
+    text-decoration:none;
+    color:#3B2A22;
+    margin:0;
+    font-size:40px;
+}
+h3{
+    color:#3B2A22;
+    margin:0;
+    font-size:40px;
+}
+img{
+    border-radius:100%;
+    vertical-align: middle;
+    hieght:50px;
+    width:50px;
+}
+.checkout{
+    color:#7A8450;
 }
 .organize{
     display:flex;
@@ -25,24 +47,29 @@ h1{
     width:50%;
 }
 section{
-    background:#eeddca;
-    border:2px solid #4A3728;
+    background:#F5F0E1;
+    border:2px solid #7A8450;
     border-radius:20px;
     margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
 }
 fieldset{
-    font-size: 20px;
+    font-size:20px;
     border:none;
     padding:20px;
-    margin-top:15px ;
+    margin-top:15px;
 }
 legend{
     font-weight:bold;
     margin-bottom:0px;
-    color:#3f261b;
+    color:#7A8450;
+    text-decoration:underline;
+}
+u{
+   text-decoration:#7A8450;
 }
 legend>img{
-    height: 40px;
+    height:40px;
     width:40px;
     border-radius:100%;
     vertical-align: middle;
@@ -57,34 +84,40 @@ td{
     width:50%;
 }
 label{
-   color:#3f261b;
-    font-size:18px; 
+    color:#513d33;
+    font-size:19px;
 }
 input{
     width:90%;
     padding:8px;
     border-radius:20px;
-    border:2px solid #5a2d16;
-    background:#F5F0E1;
-    font-size:18px ;
+    border:2px solid #7A8450;
+    background:#f0f4e3cf;
+    font-size:18px;
+}
+input::placeholder{
+    color:#b38b77bd;
+    font-size:15px;
 }
 input[type="radio"]{
     width:auto;
-    accent-color: #a07e5e;
+    accent-color:#7A8450;
 }
 .inf-visa{
-    display: none;
+    display:none;
+}
+.totaltopay{
+    color:#7A8450;
 }
 input[type="submit"]{
-    display:block;
+     display:block;
     margin:20px auto;
-    width:600px;
-    padding: 12px;
-    border-radius: 40px;
-    background:#5a2d16;
+    width: 600px;
+    padding:12px;
+    border-radius:40px;
+    background:#3c441d;
     color:white;
 }
-
-input[type="submit"]:hover {
-    background-color: #a07e5e;
+input[type="submit"]:hover{
+    background-color:#A07E5E;
 }

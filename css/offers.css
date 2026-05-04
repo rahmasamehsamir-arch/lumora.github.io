@@ -48,6 +48,7 @@ div.icon {
     display: flex;       
     width: 100%;        
     height: 50px;
+      background-color: transparent;
 }
 div.word{
     text-align: center;
@@ -64,4 +65,28 @@ div.title{
     width: 300px;
     margin: auto;
     margin-top: 10px;
+}
+div.javabutton{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    }
+div.quantity h3{
+    font-weight: 300;
+    font-size: 15px;
+}
+div.threebuttons{
+    margin-left: 15px;
+    border: dotted 1.5px #F5F0E1;
+    border-radius: 5PX;
+    width: 100px;
+height: 30px;
+}
+div.threebuttons button{
+background-color:transparent;
+border: none;
+padding: 3px;
+width: 40px;
+height: 25px;
 }

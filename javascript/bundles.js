@@ -8,7 +8,7 @@ wishlistButtons.forEach(function(btn) {
       name: card.querySelector("h2").innerText,
       price: parseFloat(card.querySelector(".price h3").innerText),
       image: card.parentElement.querySelector("img").src
-   };
+    };
 
     let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
@@ -62,7 +62,7 @@ document.querySelectorAll(".section > div").forEach((productCard) => {
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
-
+    // reset
     count = 1;
     countSpan.textContent = 1;
 

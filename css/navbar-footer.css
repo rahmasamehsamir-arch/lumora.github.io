@@ -166,3 +166,55 @@ footer p {
 .social-icons a:hover {
   color: #d8a548
 }
+
+
+
+body.dark .nav-links a {
+  color: #f5f0e1;
+}
+
+body.dark .nav-links a:visited {
+  color: #f5f0e1;
+}
+
+body.dark .nav-links a:hover {
+  color: #e6b85c;
+}
+
+
+body.dark .cart-link,
+body.dark .user-btn,
+body.dark .mode {
+  color: #f5f0e1;
+}
+
+
+body.dark .dropdown {
+  background: #2a241d;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+body.dark .dropdown a {
+  color: #f5f0e1;
+}
+
+body.dark .dropdown a:hover {
+  background: #1f1b16;
+}
+
+
+body.dark footer {
+  background: #12100d;
+}
+
+body.dark footer p {
+  color: #f5f0e1;
+}
+
+body.dark .social-icons a {
+  color: #f5f0e1;
+}
+
+body.dark .social-icons a:hover {
+  color: #e6b85c;
+}

@@ -19,3 +19,21 @@ allProducts.forEach(product => {
         }
     });
 });
+
+let addButtons = document.querySelectorAll(".add-btn");
+
+addButtons.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+
+        let product = {
+            name: btn.parentElement.querySelector("h3").innerText,
+            price: btn.parentElement.querySelector("p").innerText
+        };
+
+        let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [ ];
+
+        wishlist.push(product);
+
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    });
+});

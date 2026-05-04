@@ -1,0 +1,49 @@
+let form =document.querySelector('form');
+let first_name =document.querySelector('.in_first');
+let last_name =document.querySelector('.in_last');
+let phon =document.querySelector('.in_phone');
+let email =document.querySelector('.in_email');
+let password =document.querySelector('.in_password');
+let confirm_password =document.querySelector('.in_confirm');
+let sign_up_button =document.querySelector('.save');
+
+sign_up_button.addEventListener("click",function(event){
+    event.preventDefault();
+    let first = first_name.value.trim();
+    let last = last_name.value.trim();
+    let tell = phon.value.trim();
+    let mail = email.value.trim();
+    let pass = password.value.trim();
+    let confirm = confirm_password.value.trim();
+    let digits_tell=tell.replace(/\D/g,'');
+    if(first===''||last===''||tell===''||mail===''||pass===''||confirm==='')
+    {
+        alert('please fill in all fields');
+        return;
+    }
+    if(!email.includes('@')||!email.includes('.')||!email.includes(' '))
+    {   
+        alert("email is not a vailable");
+        return;
+    }
+    if(pass!==confirm)
+    {
+       alert("password do not match");
+        return; 
+    }
+    if(digits_tell!==11)
+    {
+       alert("phone number must be 11 digits");
+        return;  
+    }
+    let data_of_user={
+        first_name:first,
+        last_name:last,
+        phon:tell,
+        email:mail,
+        password:pass
+    };
+    localStorage.setItem(mail,JSON.stringify(data_of_user));
+    window.location.href='index.html';
+
+});

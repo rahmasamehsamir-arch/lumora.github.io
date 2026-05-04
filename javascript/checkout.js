@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     let visa = document.getElementById("visa");
     let cash = document.getElementById("cash");
-    let infvisa= document.getElementById(".inf-visa");
+    let infvisa= document.querySelectorAll(".inf-visa");
     visa.addEventListener("change", function(){
         infvisa.forEach(function(el){
             el.style.display="table-row"; });
@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function(){
     let items = document.getElementById("items");
     let delivery = document.getElementById("delivery");
     let total = document.getElementById("total");
-    let carttotal = localStorage.getItem("cartTotal");
+    let cartTotal = localStorage.getItem("cartTotal");
     let itemsvalue =cartTotal ? Number(cartTotal):0;
     let deliveryvalue = Number(delivery.innerText);
     let finaltotal= itemsvalue + deliveryvalue;
-    items.innerText =itemsvalue+"EGP";
-    delivery.innerText= deliveryvalue +"EGP";
-    total.innerText = finaltotal +"EGP";
+    items.innerText =itemsvalue+" EGP";
+    delivery.innerText= deliveryvalue +" EGP";
+    total.innerText = finaltotal +" EGP";
 });
 function gotopage(){
     let firstname= document.getElementById("first_name").value;

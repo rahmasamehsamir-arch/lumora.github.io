@@ -1,49 +1,48 @@
-document.addEventListener("DOMContentLoaded", Function(){
+document.addEventListener("DOMContentLoaded", function(){
     let visa = document.getElementById("visa");
     let cash = document.getElementById("cash");
     let infvisa= document.getElementById(".inf-visa");
     visa.addEventListener("change", function(){
-        infvisa.forEach(functioncccccc9el){
-            el.style.display="table-row";
-        });
+        infvisa.forEach(function(el){
+            el.style.display="table-row"; });
     });
     cash.addEventListener("change" ,function(){
         infvisa.forEach(function(el){
-            el.style.display="none";
-        });
+            el.style.display="none"; });
     });
+    
     let items = document.getElementById("items");
     let delivery = document.getElementById("delivery");
     let total = document.getElementById("total");
-    let carttotal = localstorage.getItem("cartTotal");
-    let itemsvalue = carttotal ? Number(carttotal):0;
+    let carttotal = localStorage.getItem("cartTotal");
+    let itemsvalue =cartTotal ? Number(cartTotal):0;
     let deliveryvalue = Number(delivery.innerText);
     let finaltotal= itemsvalue + deliveryvalue;
-    items.innerText = itemsvalue+"EGP";
+    items.innerText =itemsvalue+"EGP";
     delivery.innerText= deliveryvalue +"EGP";
     total.innerText = finaltotal +"EGP";
 });
 function gotopage(){
-    let firstname = document.getElementById("first_name").value;
-    let lastname = document.getElementById("last_name").value;
-    let email = document.getElementById("email").value;
-    let phone =document.getElementById("phone").value;
+    let firstname= document.getElementById("first_name").value;
+    let lastname= document.getElementById("last_name").value;
     let country = document.getElementById("country").value;
-    let city = document.getElementById("city").value;
+    let email= document.getElementById("email").value;
     let address = document.getElementById("address").value;
+    let phone =document.getElementById("phone").value;
+    let city = document.getElementById("city").value;
+    
 
-   let errorMessage ="";
-    if(firstname ==="") errorMessage+="-first name\n";
-    if(secondname==="") errorMessage+="-last name\n";
-    if(email==="")errorMessage+="-email\n";
-    if(phone==="")errorMessage+="-phone number\n";
-    if(country==="")errorMessage+="-country\n";
-    if(city==="")errorMessage+="-city\n";
-    if(address==="")errorMessage+="-address\n";
-    if(errorMessage !==""){
-        alert("please fill in thesefields:\n" + errorMessage);
-        return false; 
-    }
-    window.location.herf ="../html/shipping.html";
+   let errormessage ="";
+    if(firstname==="") errormessage+= "-first name\n";
+    if(lastname==="") errormessage+="-last name\n";
+    if(email==="")errormessage+="-email\n";
+    if(city==="")errormessage+="-city\n";
+    if(phone==="")errormessage+="-phone number\n";
+    if(country==="")errormessage+="-country\n";
+    if(address==="")errormessage+="-address\n";
+    if(errormessage!==""){
+        alert("fill in these fields:\n"+ errormessage);
+        return false;}
+    window.location.href ="../html/shipping.html";
     return false;
 }

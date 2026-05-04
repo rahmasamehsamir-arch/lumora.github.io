@@ -1,6 +1,6 @@
+
 let form = document.querySelector('form');
 
-if(form){
 form.addEventListener("submit", function(event){
     event.preventDefault();
 
@@ -21,12 +21,12 @@ form.addEventListener("submit", function(event){
     let digits_tell = tell.replace(/\D/g, '');
 
     if(first === '' || last === '' || tell === '' || mail === '' || pass === '' || confirm === ''){
-        alert('Please fill all fields');
+        alert('Please fill in all fields');
         return;
     }
 
     if(!mail.includes('@') || !mail.includes('.')){
-        alert("Invalid email");
+        alert("Email is not valid");
         return;
     }
 
@@ -36,11 +36,11 @@ form.addEventListener("submit", function(event){
     }
 
     if(digits_tell.length !== 11){
-        alert("Phone must be 11 digits");
+        alert("Phone number must be 11 digits");
         return;
     }
 
-    let user = {
+    let data_of_user = {
         first_name: first,
         last_name: last,
         phon: tell,
@@ -48,8 +48,9 @@ form.addEventListener("submit", function(event){
         password: pass
     };
 
-    localStorage.setItem(mail, JSON.stringify(user));
+    localStorage.setItem(mail, JSON.stringify(data_of_user));
+
+    alert("Account created successfully");
 
     window.location.href = "/index.html";
 });
-}

@@ -79,7 +79,7 @@
   background-color: transparent;
 }
 
-/* Hover effect */
+
 .category-item:hover {
     color: #746639;
     transform: translateY(-10px);

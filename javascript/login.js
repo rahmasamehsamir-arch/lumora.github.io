@@ -32,7 +32,7 @@ form.addEventListener("submit", function(e){
     if(user_data.password === password){
         alert('Welcome back ' + user_data.first_name);
         localStorage.setItem('logged', email);
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
     } else {
         alert('Incorrect password');
     }

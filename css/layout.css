@@ -1,93 +1,25 @@
-/*
-body {
+
+body{
     background: #f5f0e1;
     color: #1a1a1a;
-    transition: background 0.3s, color 0.3s;
-}
-
-
+    transition: background 0.3s, color 0.3s;}
 body.dark {
     background: #1f1b16;
-    color: #f5f0e1;
-}
-
-
-body.dark .navbar {
-    background: #2a241d;
-}
-
-body.dark .nav-links a {
-    color: #f5f0e1;
-}
-
-
+    color:#f5f0e1;   }
+body.dark .navbar{
+    background: #2a241d;}
+body.dark .nav-links a{
+    color:#2a241d;}
 body.dark .cart-link,
 body.dark .user,
-body.dark .mode {
-    color: #f5f0e1;
-}
+body.dark .mode{
+    color:#f5f0e1;}
+body.dark .dropdown{
+    background: #2a241d;}
+body.dark .dropdown a{
+    color:#f5f0e1;}
+body.dark .dropdown a:hover{ background:#12100d;}
+body.dark footer p,body.dark .social-icons a{
+    color:#f5f0e1;}
 
 
-body.dark .dropdown {
-    background: #2a241d;
-}
-
-body.dark .dropdown a {
-    color: #f5f0e1;
-}
-
-body.dark .dropdown a:hover {
-    background: #1f1b16;
-}
-
-
-body.dark footer {
-    background: #12100d;
-}
-
-body.dark footer p,
-body.dark .social-icons a {
-    color: #f5f0e1;
-}
-*/
-
-
-
-
-
-Body {
- background: #f5f0e1;
- color: #1a1a1a;
- transition: background 0.3s, color 0.3s;
-}
-body.dark {
- background: #1f1b16;
- color: #f5f0e1;
-}
-body.dark .navbar {
- background: #2a241d;
-}
-body.dark .nav-links a {
- color: #f5f0e1;
-}
-body.dark .cart-link,
-body.dark .user,
-body.dark .mode {
- color: #f5f0e1;
-}
-body.dark .dropdown {
- background: #2a241d;
-}
-body.dark .dropdown a {
- color: #f5f0e1;
-}
-body.dark .dropdown a:hover {
- background: #1f1b16;
-}
-body.dark footer {
- background: #12100d;
-}
-body.dark footer p,
-body.dark .social-icons a {
- color: #f5f0e1;
-}

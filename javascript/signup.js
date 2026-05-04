@@ -40,13 +40,13 @@ form.addEventListener("submit", function(event){
         return;
     }
 
-    let user = {
-        first_name: first,
-        last_name: last,
-        phon: tell,
-        email: mail,
-        password: pass
-    };
+    let user = [
+        first,
+         last,
+         tell,
+         mail,
+         pass
+    ];
 
     localStorage.setItem(mail, JSON.stringify(user));
 

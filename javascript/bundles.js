@@ -66,6 +66,5 @@ document.querySelectorAll(".section > div").forEach((productCard) => {
     count = 1;
     countSpan.textContent = 1;
 
-    alert("Added to cart.");
   });
 });

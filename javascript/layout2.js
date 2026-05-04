@@ -1,5 +1,5 @@
 
-const layoutBtn = document.querySelector(".layout");
+const layout = document.querySelector(".layout");
 
 
 if (localStorage.getItem("layout") === "vertical") {
@@ -7,8 +7,8 @@ if (localStorage.getItem("layout") === "vertical") {
 }
 
 
-if (layoutBtn) {
-    layoutBtn.addEventListener("click", () => {
+if (layout) {
+    layout.addEventListener("click", () => {
         document.body.classList.toggle("vertical");
 
         if (document.body.classList.contains("vertical")) {

@@ -22,7 +22,7 @@ allProducts.forEach(product => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ====== HANDLE QUANTITY ======
+  
   document.querySelectorAll(".info").forEach(infoBox => {
 
     let minus = infoBox.querySelector(".minus");
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-  // ====== ADD TO CART ======
+
   document.querySelectorAll(".buttons .one button").forEach(btn => {
 
     btn.addEventListener("click", () => {
@@ -84,4 +84,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
+});
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+let buttons = document.querySelectorAll(".js");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    let productCard = this.closest("div");
+
+    let product = {
+      name: productCard.querySelector("h2")?.innerText,
+      price: productCard.querySelector(".price h3")?.innerText,
+      img: productCard.querySelector("img")?.getAttribute("src")
+    };
+
+    wishlist.push(product);
+
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+    alert("Added to wishlist ❤️");
+  });
 });

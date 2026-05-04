@@ -118,3 +118,13 @@ section .dryOil .card:hover .search{
     transform: translate(-50%,-10px);
     opacity: 1;
 }
+
+
+html,body{
+    height: 100%;
+    margin:0;   
+} 
+
+footer{ 
+    margin-top:auto;
+}

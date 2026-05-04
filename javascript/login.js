@@ -1,7 +1,11 @@
 let form = document.querySelector("form");
 
-form.addEventListener("submit", function(e) {
+if(form){
+form.addEventListener("submit", function(e){
     e.preventDefault();
+
+    let input_email = document.querySelector('.in_mail');
+    let input_password = document.querySelector('.in_word');
 
     let email = input_email.value.trim();
     let password = input_password.value.trim();
@@ -25,13 +29,12 @@ form.addEventListener("submit", function(e) {
 
     let user_data = JSON.parse(data);
 
-    console.log(user_data.password, password); // debug
-
     if(user_data.password === password){
         alert('Welcome back ' + user_data.first_name);
         localStorage.setItem('logged', email);
         window.location.href = "/index.html";
     } else {
-        alert('Incorrect password, please try again');
+        alert('Incorrect password');
     }
 });
+}

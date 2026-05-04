@@ -62,7 +62,7 @@ document.querySelectorAll(".section > div").forEach((productCard) => {
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
-
+    // reset
     count = 1;
     countSpan.textContent = 1;
 

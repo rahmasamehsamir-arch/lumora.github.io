@@ -1,7 +1,15 @@
+
 let form = document.querySelector('form');
 
 form.addEventListener("submit", function(event){
     event.preventDefault();
+
+    let first_name = document.querySelector('.in_first');
+    let last_name = document.querySelector('.in_last');
+    let phon = document.querySelector('.in_phone');
+    let email = document.querySelector('.in_email');
+    let password = document.querySelector('.in_password');
+    let confirm_password = document.querySelector('.in_confirm');
 
     let first = first_name.value.trim();
     let last = last_name.value.trim();
@@ -42,5 +50,7 @@ form.addEventListener("submit", function(event){
 
     localStorage.setItem(mail, JSON.stringify(data_of_user));
 
-    window.location.href = "/index.html";
+    alert("Account created successfully");
+
+    window.location.href = window.location.origin + "../index.html";
 });

@@ -1,7 +1,5 @@
 
 
-
-
 const body = document.body;
 const modeBtn = document.querySelector(".mode");
 const layoutBtn = document.querySelector(".layout-btn");
@@ -27,7 +25,6 @@ if (modeBtn) {
         }
     });
 }
-
 
 if (layoutBtn) {
     layoutBtn.addEventListener("click", () => {

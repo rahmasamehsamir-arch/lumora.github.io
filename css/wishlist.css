@@ -1,6 +1,7 @@
-body {
-    background-color: #F5F0E1;
-    font-family: Arial, sans-serif;
+body{
+
+background-color: #F5F0E1;
+    font-family: Arial, sans-serif; 
 }
 
 
@@ -10,12 +11,14 @@ body {
     color: #3B2A22;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+   font-size: 40px;
 }
+
+
 
 h2 {
     margin-bottom: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
      color:#3B2A22;
     
@@ -28,7 +31,6 @@ h2 {
     background-color:#3B2A22;
     text-decoration: none;
     border-radius: 8px;
-   
 
 }
 
@@ -50,8 +52,7 @@ h2 {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-   
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);  
 }
 
 .img-box {
@@ -82,9 +83,6 @@ h2 {
     background-color: #7A552A;
     transition: 0.3s ease;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-   
-   
-
 }
 
 

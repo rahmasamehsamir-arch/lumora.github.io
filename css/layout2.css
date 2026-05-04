@@ -18,9 +18,6 @@ body.vertical .navbar {
   justify-content: space-between;
 
   padding: 20px;
-
-
-
   overflow-y: auto;
 }
 
@@ -28,7 +25,6 @@ body.vertical .navbar {
 body.vertical .navbar {
   background: #f5f0e1;
 }
-
 
 body.dark.vertical .navbar {
   background: #1f1b16;
@@ -54,7 +50,7 @@ body.vertical .nav-right {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 
@@ -81,4 +77,22 @@ body.dark.vertical .mode {
 
 body.vertical main {
   margin-left: 220px;
+}
+
+
+.layout-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3000; /* 🔥 فوق كل حاجة */
+
+  background: #f5f0e1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+body.dark .layout-btn {
+  background: #1f1b16;
+  color: #f5f0e1;
 }

@@ -44,7 +44,7 @@ function renderWishlist() {
 renderWishlist();
 
 document.addEventListener("click", function(e) {
-    if (e.target.classList.contains("remove")) {
+    if (e.target.classList.contains("remove-button")) {
 
         let name = e.target.parentElement.querySelector("h3").innerText;
 
@@ -56,9 +56,10 @@ document.addEventListener("click", function(e) {
 
         renderWishlist();
     }
-}); 
+});  
 
-let addToCartButtons = document.querySelectorAll(".add-btn");
+
+let addToCartButtons = document.querySelectorAll(".add-button");
 
 addToCartButtons.forEach(function(btn) {
 

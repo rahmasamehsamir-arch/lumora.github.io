@@ -1,21 +1,17 @@
+
+
 body {
     background-color: #f5f0e1;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#logo {
-    width: 30px;
-}
-.hero img {
-  width: 100%;
-  height: 700px;     
-  object-fit: cover;  
-}
+
 
 .hero {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
   margin: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .hero img {
@@ -24,24 +20,13 @@ body {
   object-fit: cover;
   display: block;
 }
+
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.15); 
+  background: rgba(0, 0, 0, 0.15);
 }
-.hero {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.layout{
-  font-size: 18px;
-  font-family: Georgia, 'Times New Roman', Times, serif; 
-}
-
-
-
-
 
 
 .categories h2 , .reviews h2{
@@ -52,11 +37,11 @@ body {
   color: #5b4f2c;
 }
 
+
 .categories-container {
     display: grid;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 10px;
 }
 
@@ -75,23 +60,23 @@ body {
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 .categories span {
   background-color: transparent;
 }
-
 
 .category-item:hover {
     color: #746639;
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 
 
-   /*mn hna*/ 
+
 body.dark {
     background: #1f1b16;
     color: #f5f0e1;
 }
-
 
 body.dark .navbar {
     background: #2a241d;
@@ -101,18 +86,15 @@ body.dark .nav-links a {
     color: #f5f0e1;
 }
 
-
 body.dark .category-item {
     background: #2a241d;
     color: #e6b85c;
     box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
 
-
 body.dark .categories h2 {
     color: #f5f0e1;
 }
-
 
 body.dark .dropdown {
     background: #2a241d;
@@ -126,7 +108,6 @@ body.dark .dropdown a:hover {
     background: #1f1b16;
 }
 
-
 body.dark footer {
     background: #12100d;
 }
@@ -135,7 +116,6 @@ body.dark footer p,
 body.dark .social-icons a {
     color: #f5f0e1;
 }
-
 
 body.dark .cart-link,
 body.dark .user-btn,

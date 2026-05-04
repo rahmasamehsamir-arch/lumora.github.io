@@ -90,11 +90,11 @@ button {
   display: inline-block;
 }
 
-.user-btn {
+.user {
   font-size: 22px;
   cursor: pointer;
 }
-.user-btn:hover {
+.user:hover {
   color: #d8a548;
 }
 

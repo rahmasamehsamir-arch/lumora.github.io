@@ -1,5 +1,5 @@
 
-const layoutBtn = document.querySelector(".layout-btn");
+const layoutBtn = document.querySelector(".layout");
 
 
 if (localStorage.getItem("layout") === "vertical") {

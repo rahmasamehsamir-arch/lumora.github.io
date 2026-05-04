@@ -56,4 +56,25 @@ document.addEventListener("click", function(e) {
 
         renderWishlist();
     }
+}); 
+
+let addToCartButtons = document.querySelectorAll(".add-btn");
+
+addToCartButtons.forEach(function(btn) {
+
+    btn.addEventListener("click", function() {
+
+        let product = {
+            name: btn.parentElement.querySelector("h3").innerText,
+            price: btn.parentElement.querySelector("p").innerText,
+            image: btn.parentElement.querySelector("img").src
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        cart.push(product);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+    });
+
 });

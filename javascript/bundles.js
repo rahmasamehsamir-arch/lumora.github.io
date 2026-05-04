@@ -8,7 +8,7 @@ wishlistButtons.forEach(function(btn) {
       name: card.querySelector("h2").innerText,
       price: parseFloat(card.querySelector(".price h3").innerText),
       image: card.parentElement.querySelector("img").src
-    };
+   };
 
     let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 

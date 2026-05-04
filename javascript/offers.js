@@ -54,7 +54,7 @@ document.querySelectorAll(".cart-btn").forEach((btn) => {
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
-    alert("Added to cart 🛒");
+    alert("Added to cart.");
   });
 });
 
@@ -74,7 +74,7 @@ document.querySelectorAll(".wish-btn").forEach((btn) => {
     if (!exists) {
       wishlist.push(product);
       localStorage.setItem("wishlist", JSON.stringify(wishlist));
-      alert("Added to wishlist ⭐");
+      alert("Added to wishlist.");
     }
   });
 });

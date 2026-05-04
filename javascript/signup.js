@@ -52,5 +52,5 @@ form.addEventListener("submit", function(event){
 
     alert("Account created successfully");
 
-    window.location.href = "https://rahmasamehsamir-arch.github.io/lumora.github.io/";
+    window.location.href = window.location.origin + "../index.html";
 });

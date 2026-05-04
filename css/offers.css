@@ -22,15 +22,13 @@ div.all{
 div.img img{
 width: 400px;
 border-radius: 20px;
-
 margin-top: 10px;
 }
 div.icon img{
     width: 30px;
     outline: none;
     height: 30px;
-    width: 70px;
-    
+    width: 30px;
 }
 div.icon button{
     flex: 1;             

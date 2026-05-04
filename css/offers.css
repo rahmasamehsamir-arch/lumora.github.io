@@ -1,6 +1,6 @@
+header{margin: 9px;}
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
    
 }
@@ -39,6 +39,21 @@ div.icon button{
     background-color: #F5F0E1;
      width: 40px;
     height: 35px;
+}
+.icon button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.icon i {
+  color: #333;
+  transition: 0.3s;
+}
+
+.icon i:hover {
+  color: #c59d5f;
 }
 div.icon button:hover{
     opacity: 0.5;

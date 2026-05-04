@@ -10,7 +10,7 @@ removeButtons.forEach(function (btn) {
 });
 
 
-/*let container = document.querySelector(".container");
+let container = document.querySelector(".container");
 let emptySection = document.querySelector(".empty-wishlist");
 let title = document.querySelector(".Mycollection");
 

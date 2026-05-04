@@ -21,7 +21,7 @@ sign_up_button.addEventListener("click",function(event){
         alert('please fill in all fields');
         return;
     }
-    if(!email.includes('@')||!email.includes('.')||!email.includes(' '))
+    if(!email.includes('@')||!email.includes('.'))
     {   
         alert("email is not a vailable");
         return;

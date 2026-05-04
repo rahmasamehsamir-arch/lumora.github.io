@@ -12,6 +12,43 @@
         <link rel="stylesheet" href="../css/layout2.css">                                                                       
 </head>
 <body>
+   <header>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="../img/logo.png" class="logo">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../html/products_and_details.html">Shop</a></li>
+        <li><a href="../html/wishlist.html">Wishlist</a></li>
+        <li><a href="../html/offers.html">Offers</a></li>
+        <li><a href="../html/bundles.html">Bundles</a></li>
+        <li><a href="../html/about_us.html">About us</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a href="cart.html" class="cart-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    <div class="user-menu">
+      <button class="user" onclick="toggleMenu(event)">
+        <i class="fa-solid fa-user"></i>
+      </button>
+
+      <div class="dropdown" id="menu">
+        <a href="login.html">Sign-in</a>
+        <a href="signup.html">Sign-Up</a>
+        <a class="out" href="../index.html"><span>Sign-Out</span></a>
+      </div>
+    </div>
+    <button class="mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+    </div>
+  </nav>
+  <button class="layout">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  </header>
     <h1 style="font-size:40px;">Successful payment</h1>
     <p>
 Your payment has been successfully completed.<br>  

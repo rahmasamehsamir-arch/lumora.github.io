@@ -9,14 +9,32 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-h1{
-    text-align:center;
-    margin:0 auto 50px;
-    color:#F5F0E1;
-    border-radius:50px;
-    background:#462a1e;
-    width: 700px;
-    padding: 12px;
+.link{
+    display:flex;
+    gap:10px;
+    margin-left:20px;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+a{
+    text-decoration:none;
+    color:#3B2A22;
+    margin:0;
+    font-size:30px;
+}
+h3{
+    color:#3B2A22;
+    margin:0;
+    font-size:30px;
+}
+img{
+    border-radius:100%;
+    vertical-align: middle;
+    height:50px;
+    width:50px;
+}
+.checkout{
+    color:#7A8450;
 }
 p{
     text-align:center;

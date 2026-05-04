@@ -1,150 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/checkout.css">
-    <title>Checkout</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/checkout.css">
+        <title>lumora-checkout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="../img/logo.png" />
+        <link rel="stylesheet" href="../css/navbar-footer.css" />
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/layout2.css">                                                                       
+    </head>
+   <body>
+  <header>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="../img/logo.png" class="logo" />
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../html/products_and_details.html">Shop</a></li>
+        <li><a href="../html/wishlist.html">Wishlist</a></li>
+        <li><a href="../html/offers.html">Offers</a></li>
+        <li><a href="../html/bundles.html">Bundles</a></li>
+        <li><a href="../html/about_us.html">About us</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a href="cart.html" class="cart-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    <div class="user-menu">
+      <button class="user" onclick="toggleMenu(event)">
+        <i class="fa-solid fa-user"></i>
+      </button>
 
-<body>
+      <div class="dropdown" id="menu">
+        <a href="login.html">Sign-in</a>
+        <a href="signup.html">Sign-Up</a>
+        <a class="out" href="../index.html"><span>Sign-Out</span></a>
+      </div>
+    </div>
+    <button class="mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+    </div>
+  </nav>
+  <button class="layout">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  </header>
+
 <main>
-    <div>
-        <h1 style="font-size:50px;">Checkout</h1>
-
+    <div class="link">
+        <a href="cart.html">cart  > </a>
+        <a href="checkout.html" style="font-size:40px;" class="checkout">checkout  ></a>
+        <h3>successful-payment</h3>
+        <img src="../img/candle.png">
     </div>
-    <div class="organize">
-     <div class="left">
-        <form class="l">
-        <section>
-            <fieldset>
-                <legend><img src="../img/contact.png" width="40px"> <u>Contact Information:</u></legend>
+    <form onsubmit="return gotopage()">
+        <div class="organize">
+            <div class="left">
+                <section>
+                    <fieldset>
+                        <legend><img src="../img/contact.png" width="40px"> <u>Contact Information:</u></legend>
+                        <table>
+                            <tr>
+                                <td><label for="first_name">First Name</label></td>
+                                <td><input type="text" id="first_name" placeholder="Enter your first name" required></td>
+                            </tr>
 
-                <table id="TableContactInformation">
-                    <tr>
-                        <td><label for="first_name">First Name</label></td>
-                        <td><input type="text" id="first_name" required></td>
-                    </tr>
+                            <tr>
+                                <td><label for="last_name">Last Name</label></td>
+                                <td><input type="text" id="last_name" placeholder="Enter your last name" required></td>
+                            </tr>
 
-                    <tr>
-                        <td><label for="last_name">Last Name</label></td>
-                        <td><input type="text" id="last_name" required></td>
-                    </tr>
+                             <tr>
+                                <td><label for="email">email</label></td>
+                                <td><input type="email" id="email" placeholder="Enter your email" required></td>
+                            </tr>
 
-                    <tr>
-                        <td><label for="email">Email</label></td>
-                        <td><input type="email" id="email" required></td>
-                    </tr>
+                             <tr>
+                                <td><label for="phone">Phone  Number</label></td>
+                                <td><input type="tel" id="email" placeholder="Enter your phone" required></td>
+                            </tr>
+                         </table>   
+                    </fieldset>
+                </section>
+                
+                <section>
+                    <fieldset>
+                        <legend><img src="../img/shipping.png" width="40px"> <u>Shipping Information:</u></legend>
+                        <table>
+                            <tr>
+                                <td><label for="country">Country</label></td>
+                                <td><input type="text" id="country" placeholder="Enter your country" required></td>
+                            </tr>
 
-                    <tr>
-                        <td><label for="phone">Phone Number</label></td>
-                        <td><input type="tel" id="phone" required></td>
-                    </tr>
-                </table>
+                             <tr>
+                                <td><label for="city">City</label></td>
+                                <td><input type="text" id="city" placeholder="Enter your city" required></td>
+                            </tr>
 
-            </fieldset>
-        </section>
+                            <tr>
+                                <td><label for="address">Address</label></td>
+                                <td><input type="text" id="address" placeholder="Enter your address" required></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </section>
+            </div>
+            <div class="right">
+                <section>
+                    <fieldset>
+                         <legend><img src="../img/pay.png" width="40px"> <u>Payment Method:</u></legend>
+                        <table>
+                            <tr>
+                                <td>
+                                   <input type="radio" name="payment" id="cash" value="cash">
+                                    <label for="cash">Cash on Delivery</label>
+                                </td>
+                            </tr>
 
-        <section>
-            <fieldset>
-                <legend><img src="../img/shipping.png" width="40px"> <u>Shipping Information:</u></legend>
+                            <tr>
+                                <td>
+                                   <input type="radio" name="payment" id="visa" value="visa">
+                                   <label for="visa">Visa</label>
+                                </td>
+                            </tr>
 
-                <table>
-                    <tr>
-                        <td><label for="country">Country</label></td>
-                        <td><input type="text" id="country" required></td>
-                    </tr>
+                            <tr class="inf-visa">
+                                <td><label for="card_number">Card Number</label></td>
+                                <td><input type="number" id="card_number" placeholder="Enter your card number"></td>
+                            </tr>
 
-                    <tr>
-                        <td><label for="city">City</label></td>
-                        <td><input type="text" id="city" required></td>
-                    </tr>
+                            <tr class="inf-visa">
+                                <td><label for="exp">Exp.Date</label></td>
+                                <td><input type="month" id="exp"></td>
+                            </tr>
 
-                    <tr>
-                        <td><label for="address">Address</label></td>
-                        <td><input type="text" id="address" required></td>
-                    </tr>
-                </table>
-            </fieldset>
-        </section>
-
-       
-    </form> 
-    </div>
-    <div class="right">
-        <form class="r">
-         <section>
-            <fieldset>
-                <legend><img src="../img/pay.png" width="40px"> <u>Payment Method:</u></legend>
-
-                <table>
-                    <tr>
-                        <td>
-                            <input type="radio" name="payment" id="cash" value="cash" >
-                            <label for="cash">Cash on Delivery</label>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="radio" name="payment" id="visa" value="visa" >
-                            <label for="visa">Visa</label>
-                        </td>
-                    </tr>
-                    
-                    <tr class="inf-visa">
-                        <td><label for="card_number">Card Number</label></td>
-                        <td><input type="number" id="card_number"></td>
-                    </tr>
-
-                    <tr class="inf-visa">
-                        <td><label for="exp">Exp. Date</label></td>
-                        <td><input type="month" id="exp"></td>
-                    </tr>
-
-                    <tr class="inf-visa">
-                        <td><label for="cvv">CVV</label></td>
-                        <td><input type="number" id="cvv"></td>
-
-                    </tr>
-                    
-                </table>
-
-            </fieldset>
-        </section>   
-        <section>
-            <fieldset>
-              <legend><img src="../img/order.png" width="40px"> <u>Order Summary:</u></legend>
-                <table>
-                    <tr>
-                        <td>Total Price Items</td>
-                        <td id="items">0</td>
-                    </tr>
-
-                    <tr>
-                        <td>Delivery Cost</td>
-                        <td id="delivery">50</td>
-                    </tr>
-
-                    <tr>
-                        <td><strong>Total to Pay</strong></td>
-                        <td id="total"><strong>50</strong></td>
-                    </tr>
-                    
-                       
-                </table>
-
-            </fieldset>
-        </section>
-       
-        </form>
-    </div>
-    </div>
-    <form onsubmit="goToPage(); return false;">
-         <input type="submit" value="Pay Now">
+                            <tr class="inf-visa">
+                                <td><label for="cvv">CVV</label></td>
+                                <td><input type="number" id="cvv" placeholder="Enter your CVV"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </section>
+                <section>
+                    <fieldset>
+                        <legend><img src="../img/order.png" width="40px"> <u>Order Summary:</u></legend>
+                        <table>
+                            <tr>
+                                <td>Total Price Items</td>
+                                <td id="items">0 </td>
+                            </tr>
+                            <tr>
+                                <td>Delivery Cost</td>
+                                <td id="delivery">50 </td>
+                            </tr>
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+                            <tr class="totaltopay">
+                                <td><strong>Total To Pay</strong><td>
+                                <td id="total"><strong>0</strong></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </section>
+            </div>
+        </div>
+        <input type="submit" value="Pay Now">
     </form>
-        
 </main>
-<script src="../javascript/checkout.js"></script>
-</body>
-</html>
+ <script src="../javascript/checkout.js">       
+    </body>
+ </html>

@@ -23,6 +23,9 @@ body{
     margin:0;
     font-size:30px;
 }
+a.successful{
+    color:#7A8450;
+}
 p{
     text-align:center;
     color:#462a1e ;

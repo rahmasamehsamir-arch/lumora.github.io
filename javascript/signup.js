@@ -1,5 +1,6 @@
 let form = document.querySelector('form');
 
+if(form){
 form.addEventListener("submit", function(event){
     event.preventDefault();
 
@@ -39,6 +40,11 @@ form.addEventListener("submit", function(event){
         return;
     }
 
+    if(localStorage.getItem(mail)){
+        alert("Email already exists");
+        return;
+    }
+
     let data_of_user = {
         first_name: first,
         last_name: last,
@@ -48,8 +54,10 @@ form.addEventListener("submit", function(event){
     };
 
     localStorage.setItem(mail, JSON.stringify(data_of_user));
+    localStorage.setItem('logged', mail);
 
     alert("Account created successfully");
 
     window.location.href = "../index.html";
 });
+}

@@ -174,7 +174,7 @@ body.dark .nav-links a:hover {
 }
 
 body.dark .cart-link,
-body.dark .user-btn,
+body.dark .user,
 body.dark .mode {
   color: #f5f0e1;
 }

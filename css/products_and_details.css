@@ -1,32 +1,39 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
+body {
     height: 1500px;
     background-color: #f5f0e1;
     font-family: Georgia;
     letter-spacing: 2px;
 }
-header{
+header {
     margin: 9px;
 }
-section{
+section {
     width: 95%;
     margin: auto;
     overflow: auto;
 }
-section .products{
+
+body.vertical section {
+    width: calc(95% - 290px);
+    margin-right: initial;
+}
+
+section .products {
     text-align: center;
     font-size: 65px;
     padding: 10px 0px;
     color: #3b2a22;
     text-shadow: 6px 5px 6px rgba(0, 0, 0, 0.31);
 }
-section .candles{
+section .candles {
     padding-bottom: 80px;
 }
-section .candles h2,section .dryOil h2{
+section .candles h2,
+section .dryOil h2 {
     font-size: 45px;
     padding: 8px 0px;
     color: #3b2a22;
@@ -34,12 +41,12 @@ section .candles h2,section .dryOil h2{
     padding-left: 30px;
     text-shadow: 6px 5px 6px rgba(0, 0, 0, 0.31);
 }
-section .cards{
+section .cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-section .card{
+section .card {
     background-color: #d6bfa6;
     width: 20%;
     padding: 15px 0px;
@@ -50,7 +57,7 @@ section .card{
     transform: translateY(0px);
     transition: 0.5s;
 }
-section .card:hover{
+section .card:hover {
     transform: translateY(-15px);
     box-shadow: 0 10px 15px #0003;
 }
@@ -63,25 +70,25 @@ section .card .main {
     position: relative;
     transition-delay: 0.5s;
 }
-section .card .main img{
+section .card .main img {
     width: 100%;
     padding-bottom: 10px;
 }
-section .card .main .over{
+section .card .main .over {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0px;
     transition-duration: 1s;
 }
-section .card:hover .over{
+section .card:hover .over {
     opacity: 0;
 }
-section .card .space{
+section .card .space {
     width: 100%;
     height: 50px;
 }
-section .card .search{
+section .card .search {
     background-color: #7a553a;
     width: 40px;
     height: 40px;
@@ -90,54 +97,54 @@ section .card .search{
     position: absolute;
     bottom: 15%;
     left: 50%;
-    transform: translate(-50%,10px);
+    transform: translate(-50%, 10px);
     transition-duration: 0.5s;
     box-shadow: 0 10px 15px #0003;
     cursor: pointer;
     opacity: 0;
     transition-delay: 0.75s;
 }
-section .card:hover .search{
-    transform: translate(-50%,-20px);
+section .card:hover .search {
+    transform: translate(-50%, -20px);
     opacity: 1;
 }
-section .card .search:hover{
+section .card .search:hover {
     background-color: #f5f0e1;
     transition-delay: 0s;
 }
-section .card .search img{
+section .card .search img {
     display: block;
     width: 65%;
     margin: auto;
     padding-top: 7px;
 }
-section .card p{
+section .card p {
     text-align: center;
     font-size: 18px;
-    padding: 5px 0px; 
+    padding: 5px 0px;
     color: #3b2a22;
 }
-section .card h3{
+section .card h3 {
     text-align: center;
     font-size: 25px;
     color: #3b2a22;
     letter-spacing: 1.5px;
 }
-section .dryOil .card{
+section .dryOil .card {
     padding: 20px 0px;
     padding-bottom: 25px;
 }
-section .dryOil .card .main{
+section .dryOil .card .main {
     height: 80%;
 }
-section .dryOil .card .search{
-    transform: translate(-50%,20px);
+section .dryOil .card .search {
+    transform: translate(-50%, 20px);
 }
-section .dryOil .card:hover .search{
-    transform: translate(-50%,-10px);
+section .dryOil .card:hover .search {
+    transform: translate(-50%, -10px);
     opacity: 1;
 }
-.popup{
+.popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -149,10 +156,10 @@ section .dryOil .card:hover .search{
     justify-content: center;
     background-color: #00000063;
 }
-.popup.active{
+.popup.active {
     display: flex;
 }
-.popup .container{
+.popup .container {
     background-color: #7a553a;
     width: 1000px;
     height: 500px;
@@ -163,11 +170,11 @@ section .dryOil .card:hover .search{
     opacity: 0;
     transition-duration: 1s;
 }
-.popup.show .container{
+.popup.show .container {
     transform: translateY(0%);
     opacity: 1;
 }
-.popup .container .img img{
+.popup .container .img img {
     margin: auto;
     display: block;
     width: 90%;
@@ -175,14 +182,14 @@ section .dryOil .card:hover .search{
     border-radius: 10px;
     margin: 25px;
 }
-.popup .container .details{
+.popup .container .details {
     width: 75%;
     color: #d6bfa6;
     margin-right: 20px;
     padding: 15px;
     position: relative;
 }
-.popup .container .details .exit{
+.popup .container .details .exit {
     position: absolute;
     top: 15;
     right: 0;
@@ -195,29 +202,29 @@ section .dryOil .card:hover .search{
     justify-content: center;
     cursor: pointer;
 }
-.popup .container .details .exit:hover{
+.popup .container .details .exit:hover {
     background-color: #f5f0e1;
 }
-.popup .container .details .exit img{
+.popup .container .details .exit img {
     width: 30px;
     height: 30px;
 }
-.popup .container .details h2{
+.popup .container .details h2 {
     font-size: 40px;
     padding-bottom: 25px;
     border-bottom: #f5f0e1 2px solid;
 }
-.popup .container .details p{
+.popup .container .details p {
     line-height: 25px;
     padding: 20px 10px;
     font-size: 17px;
 }
-.popup .container .details .add{
+.popup .container .details .add {
     display: flex;
     justify-content: space-between;
     padding: 10px 0px;
 }
-.popup .container .details .add button{
+.popup .container .details .add button {
     font-family: Georgia;
     letter-spacing: 1px;
     width: 48%;
@@ -230,15 +237,15 @@ section .dryOil .card:hover .search{
     box-shadow: 0 10px 15px #0003;
     cursor: pointer;
 }
-.popup .container .details .add .wishlist{
+.popup .container .details .add .wishlist {
     margin-right: 5px;
 }
-.popup .container .details .add button:hover{
+.popup .container .details .add button:hover {
     background-color: #7a553a;
     color: #d6bfa6;
     border: solid 2px #d6bfa6;
 }
 
-footer{ 
-    margin-top:auto;
+footer {
+    margin-top: auto;
 }

@@ -8,8 +8,12 @@ function displayCart() {
   const container = document.querySelector(".products");
   container.innerHTML = `
     <div class="products_header">
-      <span></span><span></span><span>Product</span>
-      <span>Unit Price</span><span>Quantity</span><span>Total</span>
+      <span></span>
+      <span></span>
+      <span>Product</span>
+      <span>Unit Price</span>
+      <span>Quantity</span>
+      <span>Total</span>
     </div>
   `;
 
@@ -77,7 +81,7 @@ function updateTotal() {
   const discountRow = document.querySelector(".discount_row");
 
   if (promoApplied && appliedCode && cart.length > 0) {
-    const coupons = { LUMORA10: 0.1, LUMORA20: 0.2, NEW15: 0.15 };
+    const coupons = {LUMORA10: 0.1, LUMORA20: 0.2, NEW15: 0.15};
     if (coupons[appliedCode]) {
       discountAmount = subtotal * coupons[appliedCode];
       total = subtotal - discountAmount;
@@ -98,7 +102,7 @@ function updateTotal() {
 }
 
 function setupCoupon() {
-  const coupons = { LUMORA10: 0.1, LUMORA20: 0.2, NEW15: 0.15 };
+  const coupons = {LUMORA10: 0.1, LUMORA20: 0.2, NEW15: 0.15};
   const form = document.querySelector(".coupon");
   if (!form) return;
 
@@ -117,7 +121,7 @@ function setupCoupon() {
       localStorage.setItem("promoApplied", "true");
       localStorage.setItem("appliedCoupon", code); 
       updateTotal(); 
-      message.innerText = "Promo code applied successfully!";
+      message.innerText = "Promo code applied successfully.";
       message.className = "promo_message success";
     } else {
       message.innerText = "Invalid Promo code.";
@@ -125,4 +129,3 @@ function setupCoupon() {
     }
   });
 }
-

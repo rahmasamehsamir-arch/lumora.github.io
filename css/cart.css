@@ -123,7 +123,7 @@ button {
   border-radius: 10px;
 }
 .quantity span {
-  margin: 0 8px;
+  margin: 0px 8px;
   font-size: 14px;
 }
 
@@ -173,7 +173,7 @@ input:focus{
 .coupon_row {
   display: flex;
   align-items: center;
-  gap: 10px; /* مسافة بين input و button */
+  gap: 10px;
 }
 .container {
   display: flex;
@@ -200,10 +200,11 @@ input:focus{
 .promo_message {
   font-size: 14px;
   margin-top: 5px;
+  padding-left: 3px;
 }
 
 .promo_message.success {
-  color: green;
+  color: rgb(5, 106, 5);
 }
 
 .promo_message.error {

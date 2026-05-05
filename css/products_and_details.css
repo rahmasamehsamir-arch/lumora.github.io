@@ -3,7 +3,6 @@
     padding: 0px;
 }
 body {
-    height: 1500px;
     background-color: #f5f0e1;
     font-family: Georgia;
     letter-spacing: 2px;
@@ -12,6 +11,7 @@ header {
     margin: 9px;
 }
 section {
+    height: 1500px;
     width: 95%;
     margin: auto;
     overflow: auto;

@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function(){
         infvisa.forEach(function(el){
             el.style.display="none"; });
     });
-    
     let items = document.getElementById("items");
     let delivery = document.getElementById("delivery");
     let total = document.getElementById("total");
@@ -30,8 +29,6 @@ function gotopage(){
     let address = document.getElementById("address").value;
     let phone =document.getElementById("phone").value;
     let city = document.getElementById("city").value;
-    
-
    let errormessage ="";
     if(firstname==="") errormessage+= "-first name\n";
     if(lastname==="") errormessage+="-last name\n";
@@ -44,5 +41,4 @@ function gotopage(){
         alert("fill in these fields:\n"+ errormessage);
         return false;}
     window.location.href ="../html/shipping.html";
-    return false;
-}
+    return false;}

@@ -7,7 +7,10 @@ header{margin: 9px;}
 body{
     background-color: #F5F0E1;
 }
-
+body.vertical main{
+    width:calc(95%-290px);
+    margin-right:intial;
+}
 div.h1{
     text-align: center;
     padding-top: 10px;

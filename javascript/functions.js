@@ -84,13 +84,14 @@ function prepareDryOilPopup(productId) {
 }
 function addToCartCandles(that, productId) {
   let candleProduct = getCandleProduct(productId);
-  productsOfCart.push(candleProduct);
+  candleProduct.quantity = 1;
+  cart.push(candleProduct);
   updateLocalStorage();
   that.textContent = "Remove from cart";
   that.setAttribute("onclick", `removeFromCartCandles(this,${productId})`);
 }
 function removeFromCartCandles(that, productId) {
-  productsOfCart = productsOfCart.filter(function (item) {
+  cart = cart.filter(function (item) {
     return item.id != productId;
   });
   updateLocalStorage();
@@ -99,13 +100,13 @@ function removeFromCartCandles(that, productId) {
 }
 function addToWishlistCandles(that, productId) {
   let candleProduct = getCandleProduct(productId);
-  productsOfCart.push(candleProduct);
+  wishlist.push(candleProduct);
   updateLocalStorage();
   that.textContent = "Remove from wishlist";
   that.setAttribute("onclick", `removeFromWhishlistCandles(this,${productId})`);
 }
 function removeFromWhishlistCandles(that, productId) {
-  productsOfCart.filter(function (item) {
+  cart.filter(function (item) {
     return item.id != productId;
   });
   updateLocalStorage();
@@ -114,13 +115,14 @@ function removeFromWhishlistCandles(that, productId) {
 }
 function addToCartDryOil(that, productId) {
   let dryOilProduct = getDryOilProduct(productId);
-  productsOfCart.push(dryOilProduct);
+  dryOilProduct.quantity = 1;
+  cart.push(dryOilProduct);
   updateLocalStorage();
   that.textContent = "Remove from cart";
   that.setAttribute("onclick", `removeFromCartDryOil(this,${productId})`);
 }
 function removeFromCartDryOil(that, productId) {
-  productsOfCart = productsOfCart.filter(function (item) {
+  cart = cart.filter(function (item) {
     return item.id != productId;
   });
   updateLocalStorage();
@@ -129,13 +131,13 @@ function removeFromCartDryOil(that, productId) {
 }
 function addToWishlistDryOil(that, productId) {
   let dryOilProduct = getDryOilProduct(productId);
-  productsOfCart.push(dryOilProduct);
+  wishlist.push(dryOilProduct);
   updateLocalStorage();
   that.textContent = "Remove from wishlist";
   that.setAttribute("onclick", `removeFromWhishlistDryOil(this,${productId})`);
 }
 function removeFromWhishlistDryOil(that, productId) {
-  productsOfCart.filter(function (item) {
+  cart.filter(function (item) {
     return item.id != productId;
   });
   updateLocalStorage();
@@ -143,10 +145,11 @@ function removeFromWhishlistDryOil(that, productId) {
   that.setAttribute("onclick", `addToWishlistDryOil(this,${productId})`);
 }
 function updateLocalStorage() {
-  localStorage.setItem("productsOfCart", JSON.stringify(productsOfCart));
+  localStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.setItem("wishlist", JSON.stringify(wishlist));
 }
 function getProductCart(productId) {
-  let product = productsOfCart.filter(function (item) {
+  let product = cart.filter(function (item) {
     return item.id === productId;
   });
   return !(product.length == 0);

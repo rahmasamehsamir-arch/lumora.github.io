@@ -1,11 +1,11 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   displayCart();
   setupCoupon();
 });
 
 function displayCart() {
-  const container = document.querySelector(".products");
+  let container = document.querySelector(".products");
   container.innerHTML = `
     <div class="products_header">
       <span></span>
@@ -27,11 +27,20 @@ function displayCart() {
     return;
   }
 
-  cart.forEach((item, index) => {
+  cart.forEach(function (item, index) {
+
+    let imgSrc = ``;
+
+    if (Array.isArray(item.image)) {
+      imgSrc = `../img/${item.image[0]}`;
+    } else {
+      imgSrc = `${item.image}`;
+    }
+
     container.innerHTML += `
       <div class="product">
         <button class="remove" onclick="removeItem(${index})">&times;</button>
-        <img src="${item.image}" />
+        <img src="${imgSrc}" />
         <div class="info"><h3>${item.name}</h3></div>
         <div class="unit_price">${item.price} EGP</div>
         <div class="quantity">
@@ -65,7 +74,7 @@ function saveCart() {
 }
 
 function updateTotal() {
-  let subtotal = cart.reduce((sum, item) => {
+  let subtotal = cart.reduce(function (sum, item) {
     return sum + (parseFloat(item.price) * parseInt(item.quantity));
   }, 0);
 
@@ -78,10 +87,10 @@ function updateTotal() {
   let discountAmount = 0;
   let promoApplied = localStorage.getItem("promoApplied") === "true";
   let appliedCode = localStorage.getItem("appliedCoupon");
-  const discountRow = document.querySelector(".discount_row");
+  let discountRow = document.querySelector(".discount_row");
 
   if (promoApplied && appliedCode && cart.length > 0) {
-    const coupons = {LUMORA10: 0.1, LUMORA20: 0.2, NEW15: 0.15};
+    let coupons = { LUMORA10: 0.1, LUMORA20: 0.2, NEW15: 0.15 };
     if (coupons[appliedCode]) {
       discountAmount = subtotal * coupons[appliedCode];
       total = subtotal - discountAmount;
@@ -94,7 +103,7 @@ function updateTotal() {
     if (discountRow) discountRow.style.display = "none";
   }
 
-  const totalBox = document.querySelector(".total_row:not(.discount_row) span:last-child");
+  let totalBox = document.querySelector(".total_row:not(.discount_row) span:last-child");
   if (totalBox) {
     totalBox.innerText = Math.round(total) + " EGP";
   }
@@ -102,8 +111,8 @@ function updateTotal() {
 }
 
 function setupCoupon() {
-  const coupons = {LUMORA10: 0.1, LUMORA20: 0.2, NEW15: 0.15};
-  const form = document.querySelector(".coupon");
+  let coupons = { LUMORA10: 0.1, LUMORA20: 0.2, NEW15: 0.15 };
+  let form = document.querySelector(".coupon");
   if (!form) return;
 
   form.addEventListener("submit", function (e) {
@@ -119,8 +128,8 @@ function setupCoupon() {
 
     if (coupons[code]) {
       localStorage.setItem("promoApplied", "true");
-      localStorage.setItem("appliedCoupon", code); 
-      updateTotal(); 
+      localStorage.setItem("appliedCoupon", code);
+      updateTotal();
       message.innerText = "Promo code applied successfully.";
       message.className = "promo_message success";
     } else {

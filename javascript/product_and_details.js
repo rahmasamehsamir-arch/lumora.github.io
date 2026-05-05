@@ -2,11 +2,12 @@ let popupkeyCandles = document.querySelector(".popupkeyCandles"),
     popupkeydryoil = document.querySelector(".popupkeydryoil"),
     boxOfPopup = document.querySelector(".popup .container"),
     popup = document.querySelector('.popup'),
-    productsOfCart = [];
-if (localStorage.getItem('productsOfCart')== null){
+    cart = [],
+    wishlist = [];
+if (localStorage.getItem('cart') == null) {
     updateLocalStorage();
-}else{
-    productsOfCart=JSON.parse(localStorage.getItem('productsOfCart'));
+} else {
+    cart = JSON.parse(localStorage.getItem('cart'));
 }
 popupkeyCandles.addEventListener("click", function () {
     let popup = document.querySelector(".popup.Candles");

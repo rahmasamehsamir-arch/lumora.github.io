@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>     
     <head>
@@ -5,13 +6,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lumora-sign-up</title>
         <link rel="stylesheet" href="../css/signup.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="../img/logo.png" />
+        <link rel="stylesheet" href="../css/navbar-footer.css" />
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/layout2.css">           
     </head>
     <body>
+        <body>
+  <header>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="../img/logo.png" class="logo" />
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../html/products_and_details.html">Shop</a></li>
+        <li><a href="../html/wishlist.html">Wishlist</a></li>
+        <li><a href="../html/offers.html">Offers</a></li>
+        <li><a href="../html/bundles.html">Bundles</a></li>
+        <li><a href="../html/about_us.html">About us</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a href="cart.html" class="cart-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    <div class="user-menu">
+      <button class="user" onclick="toggleMenu(event)">
+        <i class="fa-solid fa-user"></i>
+      </button>
+
+      <div class="dropdown" id="menu">
+        <a href="login.html">Sign-in</a>
+        <a href="signup.html">Sign-Up</a>
+        <a class="out" href="../index.html"><span>Sign-Out</span></a>
+      </div>
+    </div>
+    <button class="mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+    </div>
+  </nav>
+  <button class="layout">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  </header>
         <main>
-        <header>
-            <p class="page">Sign Up</p> 
-            <p class="fill">Please fill in the form to create an account :</p>
-        </header>
+        <div class="sign-up">
+            <p class="page"> Sign Up</p> 
+            <p class="fill"> Please fill in the form to create an account :</p>
+        </div>
             <section>
                 <form>
                     <label class="first">Your First Name</label><br> 
@@ -35,6 +81,18 @@
                 <p class="have">Already have an account?<a class="log" href="login.html">login</a></p><br>
             </section>
         </main>
+            <footer>
+    <p>© 2026 Lumora. All rights reserved.</p>
+    <p>Follow us on our social media</p>
+    <div class="social-icons">       
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>       
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>        
+      <a href="mailto:support@lumora.com"><i class="fa-solid fa-envelope"></i></a>    
+    </div>
+  </footer>
+  <script src="../javascript/layout.js"></script>
+  <script src="../javascript/navbar.js"></script>
         <script src="../javascript/signup.js"></script>
     </body>
     </html>

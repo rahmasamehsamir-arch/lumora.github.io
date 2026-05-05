@@ -21,6 +21,9 @@ main{
   padding: 20px;
   border-radius: 6px;
 }
+body.dark section .cart_totals{
+    color: #d6bfa6;
+}
 h2{
     font-size: xx-large;
     margin-top: 0px;
@@ -81,10 +84,16 @@ h2{
   padding: 10px 0;
   background: #f3e9d7;
 }
+body.dark section .products_header{
+    color: #d6bfa6;
+}
 .product {
     font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 10px 0;
   border-bottom: 2px solid #ddd;
+}
+body.dark section .product{
+    color: #d6bfa6;
 }
 .product:hover{
     background-color:#f3e9d7 ;

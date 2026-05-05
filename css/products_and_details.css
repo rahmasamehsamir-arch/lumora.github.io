@@ -29,6 +29,9 @@ section .products {
     color: #3b2a22;
     text-shadow: 6px 5px 6px rgba(0, 0, 0, 0.31);
 }
+body.dark section .products{
+    color: #d6bfa6;
+}
 section .candles {
     padding-bottom: 80px;
 }
@@ -40,6 +43,10 @@ section .dryOil h2 {
     letter-spacing: 2px;
     padding-left: 30px;
     text-shadow: 6px 5px 6px rgba(0, 0, 0, 0.31);
+}
+body.dark section .candles h2,
+body.dark section .dryOil h2{
+    color: #d6bfa6;
 }
 section .cards {
     display: flex;

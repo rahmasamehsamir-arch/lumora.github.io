@@ -26,6 +26,7 @@ h2 {
      font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
      color:#3B2A22;
+     padding-left: 20px;
     
 }
 
@@ -120,3 +121,17 @@ body {
 footer{
     margin-top: auto;
 }
+
+body.vertical main {
+    width: calc(95% - 290px);
+    margin-right: initial;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+   flex-direction: row;
+}
+

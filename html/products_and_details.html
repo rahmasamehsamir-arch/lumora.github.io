@@ -61,154 +61,101 @@
 
 
         <section>
-            <div>
-                <h1 class="products">
-                   Our Products
-                </h1>
-            </div>
-            <div class="candles" id="Candles">
-                <h2>
-                    Candles
-                </h2>
-                <div class="cards">
-                    <div class="card">
-                        <div class="main">
-                            <img src="../img/berryblush.png.jpeg">
+        <div id="Candles">
+            <h1 class="products">
+                Products
+            </h1>
+        </div>
+        <div class="candles">
+            <h2>
+                Candles
+            </h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="main">
+                        <img src="../img/berryblush.png.jpeg">
+                        <div class="over">
+                            <img src="../img/berryblushhover.png.jpeg">
                         </div>
-                        <div class="space">
-                        </div>
-                        <div class="search">
-                            <img src="../img/search.png">
-                        </div>
-                        <p>
-                            310EGP
-                        </p>
-                        <h3>
-                            Barry Blush
-                        </h3>
                     </div>
-                    <div class="card">
-                        <div class="main">
-                            <img src="../img/rosewhisper.png.jpeg">
-                        </div>
-                        <div class="space">
-                        </div>
-                        <div class="search">
-                            <img src="../img/search.png">
-                        </div>
-                        <p>
-                            345EGP
-                        </p>
-                        <h3>
-                            Rose Whisper
-                        </h3>
+                    <div class="space">
                     </div>
-                    <div class="card">
-                        <div class="main">
-                            <img src="../img/dreamylavender.png.jpeg">
-                        </div>
-                        <div class="space">
-                        </div>
-                        <div class="search">
-                            <img src="../img/search.png">
-                        </div>
-                        <p>
-                            325EGP
-                        </p>
-                        <h3>
-                            Dreamy Lavender
-                        </h3>
+                    <div class="search">
+                        <img src="../img/search.png" class="popupkeyCandles" onclick="prepareCandlePopup(1)">
                     </div>
-                    <div class="card">
-                        <div class="main">
-                            <img src="../img/mochachill.png.jpeg">
-                        </div>
-                        <div class="space">
-                        </div>
-                        <div class="search">
-                            <img src="../img/search.png">
-                        </div>
-                        <p>
-                            330EGP
-                        </p>
-                        <h3>
-                            Mocha Chill
-                        </h3>
-                    </div>
+                    <p>
+                        310EGP
+                    </p>
+                    <h3>
+                        Barry Blush
+                    </h3>
                 </div>
             </div>
-            <div class="dryOil" id="DryOils">
-                <h2>
-                    Dry Oil
-                </h2>
-                <div class="cards">
-                    <div class="card">
-                        <div class="main">
-                            <img src="../img/strawberrykiss.jpeg">
+        </div>
+        <div class="dryOil" id="DryOils">
+            <h2>
+                Dry Oil
+            </h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="main">
+                        <img src="../img/strawberrykiss.jpeg">
+                        <div class="over">
+                            <img src="../img/strawberrykisshover.jpeg">
                         </div>
-                        <div class="space">
-                        </div>
-                        <div class="search">
-                            <img src="../img/search.png">
-                        </div>
-                        <p>
-                            240EGP
-                        </p>
-                        <h3>
-                            Strawbarry Kiss
-                        </h3>
                     </div>
-                    <div class="card">
-                        <div class="main">
-                            <img src="../img/rosydream.jpeg">
-                        </div>
-                        <div class="space">
-                        </div>
-                        <div class="search">
-                            <img src="../img/search.png">
-                        </div>
-                        <p>
-                            240EGP
-                        </p>
-                        <h3>
-                            Rosy Dream
-                        </h3>
+                    <div class="space">
                     </div>
-                    <div class="card">
-                        <div class="main">
-                            <img src="../img/relaxbloom.jpeg">
-                        </div>
-                        <div class="space">
-                        </div>
-                        <div class="search">
-                            <img src="../img/search.png">
-                        </div>
-                        <p>
-                            240EGP
-                        </p>
-                        <h3>
-                            Relax Bloom
-                        </h3>
+                    <div class="search">
+                        <img src="../img/search.png" class="popupkeydryoil" onclick="prepareDryOilPopup(5)">
                     </div>
-                    <div class="card">
-                        <div class="main">
-                            <img src="../img/ambersoul.jpeg">
-                        </div>
-                        <div class="space">
-                        </div>
-                        <div class="search">
-                            <img src="../img/search.png">
-                        </div>
-                        <p>
-                            240EGP
-                        </p>
-                        <h3>
-                            Amber Soul
-                        </h3>
-                    </div>
+                    <p>
+                        240EGP
+                    </p>
+                    <h3>
+                        Strawbarry Kiss
+                    </h3>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <div class="popup popup_candles" onclick="closePopup()">
+        <div class="container">
+            <div class="img">
+                <img src="../img/berryblush.png.jpeg">
+            </div>
+            <div class="details">
+                <div class="exit" onclick="closePopup()">
+                    <img src="../img/x.png">
+                </div>
+                <h2>
+                    Berry Blush
+                </h2>
+                <p>
+                    Indulge your senses with our Strawberry Handmade Candle, a delightful blend of sweetness and warmth.
+                    Infused with the fresh, juicy aroma of ripe strawberries, this candle creates a cozy and uplifting
+                    atmosphere in any space.
+                    <br>
+                    Crafted with premium wax and carefully selected fragrance oils, it burns evenly while releasing a
+                    rich, mouthwatering scent. Perfect for relaxation, self-care moments, or adding a touch of charm to
+                    your home décor.
+                    <br><br>
+                    Perfect for: Cozy evenings, gifting, and creating a cheerful ambiance.
+                </p>
+                <div class="add">
+                    <button class="cart">
+                        Add to cart
+                    </button>
+                    <button class="wishlist">
+                        Add to Wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
 <footer>
     <p>© 2026 Lumora. All rights reserved.</p>
@@ -220,8 +167,10 @@
       <a href="mailto:support@lumora.com"><i class="fa-solid fa-envelope"></i></a>    
     </div>
   </footer>
+  <script src="../javascript/data.js"></script>
+    <script src="../javascript/products_and_details.js"></script>
+    <script src="../javascript/functions.js"></script>
   <script src="../javascript/layout.js"></script>
   <script src="../javascript/navbar.js"></script>
-
     </body>
 </html>

@@ -103,6 +103,10 @@ input[type="radio"]{
     width:auto;
     accent-color:#7A8450;
 }
+.ttl{
+    color:#513d33;
+    font-size:19px;
+}
 .inf-visa{
     display:none;
 }

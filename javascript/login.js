@@ -1,12 +1,14 @@
+let form = document.querySelector("form");
 
-let form = document.querySelector('form');
-
-if(form && document.querySelector('.in_mail')){
+if(form){
 form.addEventListener("submit", function(e){
     e.preventDefault();
 
-    let email = document.querySelector('.in_mail').value.trim();
-    let password = document.querySelector('.in_word').value.trim();
+    let input_email = document.querySelector('.in_mail');
+    let input_password = document.querySelector('.in_word');
+
+    let email = input_email.value.trim();
+    let password = input_password.value.trim();
 
     if(email === ""){
         alert("Please enter an email");
@@ -21,17 +23,18 @@ form.addEventListener("submit", function(e){
     let data = localStorage.getItem(email);
 
     if(data === null){
-        alert("Please sign up first");
+        alert('Please sign up first');
         return;
     }
 
-    let user = JSON.parse(data);
+    let user_data = JSON.parse(data);
 
-    if(user.password === password){
+    if(user_data.password === password){
+        alert('Welcome back ' + user_data.first_name);
         localStorage.setItem('logged', email);
         window.location.href = "../index.html";
     } else {
-        alert("Incorrect password");
+        alert('Incorrect password');
     }
 });
 }

@@ -106,7 +106,7 @@ function addToWishlistCandles(that, productId) {
   that.setAttribute("onclick", `removeFromWhishlistCandles(this,${productId})`);
 }
 function removeFromWhishlistCandles(that, productId) {
-  cart.filter(function (item) {
+  wishlist.filter(function (item) {
     return item.id != productId;
   });
   updateLocalStorage();
@@ -137,7 +137,7 @@ function addToWishlistDryOil(that, productId) {
   that.setAttribute("onclick", `removeFromWhishlistDryOil(this,${productId})`);
 }
 function removeFromWhishlistDryOil(that, productId) {
-  cart.filter(function (item) {
+  wishlist.filter(function (item) {
     return item.id != productId;
   });
   updateLocalStorage();

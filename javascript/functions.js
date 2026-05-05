@@ -23,11 +23,11 @@ function prepareCandlePopup(productId) {
     popupCandlesEle = document.querySelector(".popup .container");
   popupCandlesEle.innerHTML = `
         <div class="img">
-            <img src="../images/${product.image[0]}">
+            <img src="../img/${product.image[0]}">
         </div>
         <div class="details">
             <div class="exit" onclick="closePopup()">
-                <img src="../images/x.png">
+                <img src="../img/x.png">
             </div>
             <h2>
                 ${product.name}
@@ -58,11 +58,11 @@ function prepareDryOilPopup(productId) {
     popupDryOilEle = document.querySelector(".popup .container");
   popupDryOilEle.innerHTML = `
         <div class="img">
-            <img src="../images/${product.image[0]}">
+            <img src="../img/${product.image[0]}">
         </div>
         <div class="details">
             <div class="exit" onclick="closePopup()">
-                <img src="../images/x.png">
+                <img src="../img/x.png">
             </div>
             <h2>
                 ${product.name}

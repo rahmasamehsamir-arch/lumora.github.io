@@ -3,7 +3,7 @@ var candles=[
     {
         'id': 1,
         'name': 'Barry Blush',
-        'image': ['berryblush.png.jpeg','berryblushhover.png.jpeg'],
+        'image': ['berryblush.png.jpeg','berryblushhover.png'],
         'price': 310,
         'description1': 'Indulge your senses with our Strawberry Handmade Candle, a delightful blend of sweetness and warmth. Infused with the fresh, juicy aroma of ripe strawberries, this candle creates a cozy and uplifting atmosphere in any space.',
         'description2': 'Crafted with premium wax and carefully selected fragrance oils, it burns evenly while releasing a rich, mouthwatering scent. Perfect for relaxation, self-care moments, or adding a touch of charm to your home décor.',
@@ -12,7 +12,7 @@ var candles=[
     {
         'id': 2,
         'name': 'Rose Whisper',
-        'image': ['rosewhisper.jpeg','rosewhisperhover.jpeg'],
+        'image': ['rosewhisper.jpeg','rosewhisperhover.png'],
         'price': 345,
         'description1': 'Elevate your space with the elegance of our Rose Handmade Candle. Featuring a delicate and romantic floral scent, it brings a luxurious and comforting vibe to any room.',
         'description2': 'Infused with dried rose petals and crafted with high-quality ingredients, this candle is both visually stunning and beautifully fragrant.',
@@ -21,7 +21,7 @@ var candles=[
     {
         'id': 3,
         'name': 'Dreamy Lavender',
-        'image': ['dreamylavender.png.jpeg','dreamylavenderhover.png.jpeg'],
+        'image': ['dreamylavender.png.jpeg','dreamylavenderhover.png'],
         'price': 325,
         'description1': 'Experience pure relaxation with our Lavender Handmade Candle. Known for its calming and soothing properties, lavender helps reduce stress and promotes restful sleep.',
         'description2': 'This candle fills your space with a soft floral aroma, creating a peaceful and spa-like environment. Hand-poured with care, it offers a clean and long-lasting burn.',
@@ -30,7 +30,7 @@ var candles=[
     {
         'id': 4,
         'name': 'Mocha Chill',
-        'image': ['mochachill.png.jpeg','mochachillhover.png.jpeg'],
+        'image': ['mochachill.png.jpeg','mochachillhover.png'],
         'price': 330,
         'description1': 'Awaken your senses with our Iced Coffee Handmade Candle, inspired by your favorite café experience.With rich coffee notes and a creamy finish, it delivers a warm yet refreshing aroma.',
         'description2': 'Designed to resemble iced coffee, this candle is both unique and irresistible—perfect for coffee lovers.',
@@ -42,7 +42,7 @@ var dryoil=[
     {
         'id': 5,
         'name': 'Strawbarry Kiss',
-        'image': ['strawberrykiss.jpeg','strawberrykisshover.jpeg'],
+        'image': ['strawberrykiss.jpeg','strawberrykisshover.png'],
         'price': 240,
         'description1': 'Enjoy the sweet and fruity aroma of our Strawberry Essential Oil. This uplifting scent brings freshness and energy to your day while filling your space with a delicious fragrance.',
         'description2': 'Perfect for diffusers or DIY beauty products.',
@@ -51,7 +51,7 @@ var dryoil=[
     {
         'id': 6,
         'name': 'Rosy Dream',
-        'image': ['rosydream.jpeg','rosydreamhover.jpeg'],
+        'image': ['rosydream.jpeg','rosydreamhover.png'],
         'price': 240,
         'description1': 'Immerse yourself in the timeless beauty of our Rose Essential Oil. Known for its luxurious floral scent, it enhances mood, promotes relaxation, and supports skincare routines.',
         'description2': 'A must-have for a touch of elegance and self-care.',
@@ -60,7 +60,7 @@ var dryoil=[
     {
         'id': 7,
         'name': 'Relax Bloom',
-        'image': ['relaxbloom.jpeg','relaxbloomhover.jpeg'],
+        'image': ['relaxbloom.jpeg','relaxbloomhover.png'],
         'price': 240,
         'description1': 'Relax and unwind with our Lavender Essential Oil, 100% pure and natural. Known for its calming effects, it helps reduce anxiety, improve sleep quality, and create a peaceful environment.',
         'description2': 'Ideal for aromatherapy, diffusers, or blending with skincare routines.',
@@ -69,7 +69,7 @@ var dryoil=[
     {
         'id': 8,
         'name': 'Amber Soul',
-        'image': ['ambersoul.jpeg','ambersoulhover.jpeg'],
+        'image': ['ambersoul.jpeg','ambersoulhover.png'],
         'price': 240,
         'description1': 'Discover the richness of our Musk Essential Oil, a deep and sensual fragrance that adds warmth and sophistication. Its long-lasting scent makes it perfect for personal use or home fragrance.',
         'description2': 'A luxurious choice for those who love bold and elegant aromas.',

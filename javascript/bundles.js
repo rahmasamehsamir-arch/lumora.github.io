@@ -1,7 +1,7 @@
 let wishlistButtons = document.querySelectorAll(".wishlist-button");
 
-wishlistButtons.forEach(function(btn) {
-  btn.addEventListener("click", function() {
+wishlistButtons.forEach(function (btn) {
+  btn.addEventListener("click", function () {
     let card = btn.closest(".info");
 
     let product = {
@@ -23,10 +23,10 @@ wishlistButtons.forEach(function(btn) {
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 document.querySelectorAll(".section > div").forEach((productCard) => {
-  const addBtn = productCard.querySelector(".one button");
-  const plusBtn = productCard.querySelector(".plus");
-  const minusBtn = productCard.querySelector(".minus");
-  const countSpan = productCard.querySelector(".count");
+  let addBtn = productCard.querySelector(".one button");
+  let plusBtn = productCard.querySelector(".plus");
+  let minusBtn = productCard.querySelector(".minus");
+  let countSpan = productCard.querySelector(".count");
 
   let count = 1;
 
@@ -43,9 +43,9 @@ document.querySelectorAll(".section > div").forEach((productCard) => {
   });
 
   addBtn.addEventListener("click", () => {
-    const name = productCard.querySelector(".product h2").innerText;
-    const price = parseFloat(productCard.querySelector(".price h3").innerText);
-    const image = productCard.querySelector("img").src;
+    let name = productCard.querySelector(".product h2").innerText;
+    let price = parseFloat(productCard.querySelector(".price h3").innerText);
+    let image = productCard.querySelector("img").src;
 
     let existing = cart.find(item => item.name === name);
 

@@ -1,116 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lumora - Shopping Cart</title>
-        <link rel="stylesheet" href="..\css\cart.css">
-        <meta charset="UTF-8">
+
+<head>
+  <title>Lumora - Shopping Cart</title>
+  <link rel="stylesheet" href="..\css\cart.css">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="../img/logo.png" />
   <link rel="stylesheet" href="../css/navbar-footer.css" />
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/layout2.css">
-        <script src="..\javascript\cart.js" defer></script>
-    </head>
-    <body>
-  <header>
-  <nav class="navbar">
-    <div class="nav-left">
-      <img src="../img/logo.png" class="logo" />
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../html/products_and_details.html">Shop</a></li>
-        <li><a href="../html/wishlist.html">Wishlist</a></li>
-        <li><a href="../html/offers.html">Offers</a></li>
-        <li><a href="../html/bundles.html">Bundles</a></li>
-        <li><a href="../html/about_us.html">About us</a></li>
-      </ul>
-    </div>
-    <div class="nav-right">
-      <a href="cart.html" class="cart-link">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </a>
-    <div class="user-menu">
-      <button class="user" onclick="toggleMenu(event)">
-        <i class="fa-solid fa-user"></i>
-      </button>
+  <script src="../javascript/cart.js"></script>
+  <script src="../javascript/wishlist.js"></script>
+</head>
 
-      <div class="dropdown" id="menu">
-        <a href="login.html">Sign-in</a>
-        <a href="signup.html">Sign-Up</a>
-        <a class="out" href="../index.html"><span>Sign-Out</span></a>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="../img/logo.png" class="logo" />
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/products_and_details.html">Shop</a></li>
+          <li><a href="../html/wishlist.html">Wishlist</a></li>
+          <li><a href="../html/offers.html">Offers</a></li>
+          <li><a href="../html/bundles.html">Bundles</a></li>
+          <li><a href="../html/about_us.html">About us</a></li>
+        </ul>
       </div>
-    </div>
-    <button class="mode">
-        <i class="fa-solid fa-moon"></i>
+      <div class="nav-right">
+        <a href="cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <div class="user-menu">
+          <button class="user" onclick="toggleMenu(event)">
+            <i class="fa-solid fa-user"></i>
+          </button>
+
+          <div class="dropdown" id="menu">
+            <a href="login.html">Sign-in</a>
+            <a href="signup.html">Sign-Up</a>
+            <a class="out" href="../index.html"><span>Sign-Out</span></a>
+          </div>
+        </div>
+        <button class="mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+    <button class="layout">
+      <i class="fa-solid fa-bars"></i>
     </button>
-    </div>
-  </nav>
-  <button class="layout">
-    <i class="fa-solid fa-bars"></i>
-  </button>
   </header>
-        
-        <main>
-            <section class="page_name"><h1>Shopping Cart</h1></section>
-            <section class="everything">
-            <section class="cart_details">
-                <div class="products">
-                    <div class="products_header">
-                        <span></span>
-                        <span></span>
-                        <span>Product</span>
-                        <span>Unit Price</span>
-                        <span>Quantity</span>
-                        <span>Total</span>
-                    </div>
-                    
-                </div>
-                <div class="container">
-                    <form class="coupon" method="post">
-                    <p>Have a promo code?</p>
-                    <div class="coupon_row">
-                    <input type="text" placeholder=" Enter coupon code" name="coupon">
-                    <button class="apply" type="submit">Apply</button>
-                </div>
-                    <p class="promo_message"></p>
-                    </form>
-                <div class="wishlist">
-                    <p>Don't wanna buy now?</p>
-                    <a href="wishlist.html" title="Go To Wishlist Page "> &lt; Save for later</a>
-                </div>
-                </div>
-            </section>
-            <section class="cart_totals">
-                <h2>Cart Totals</h2>
-                <div class="total_row">
-                    <span>Total:</span>
-                    <span>0EGP</span>
-                </div>
-                <div class="total_row discount_row" style=" color: rgb(5, 106, 5); font-size: medium; justify-content: center; padding-top: 10px;">
-        <span>Discount:</span>
-        <span>0 EGP</span>
-    </div>
-                <div class="links">
-                    <button class="checkout" onclick="window.location.href='checkout.html'" title="Go To Checkout">
-                Proceed to Checkout
-                </button>
-                <a href="..\index.html" title="Go To Home Page"> &lt; Continue Shopping</a>
-                </div>
-            </section>
-            </section>
-        </main>
-        <footer>
+
+  <main>
+    <section class="page_name">
+      <h1>Shopping Cart</h1>
+    </section>
+    <section class="everything">
+      <section class="cart_details">
+        <div class="products">
+          <div class="products_header">
+            <span></span>
+            <span></span>
+            <span>Product</span>
+            <span>Unit Price</span>
+            <span>Quantity</span>
+            <span>Total</span>
+          </div>
+
+        </div>
+        <div class="container">
+          <form class="coupon" method="post">
+            <p>Have a promo code?</p>
+            <div class="coupon_row">
+              <input type="text" placeholder=" Enter coupon code" name="coupon">
+              <button class="apply" type="submit">Apply</button>
+            </div>
+            <p class="promo_message"></p>
+          </form>
+          <div class="wishlist">
+            <p>Don't wanna buy now?</p>
+            <a href="wishlist.html" title="Go To Wishlist Page "> &lt; Save for later</a>
+          </div>
+        </div>
+      </section>
+      <section class="cart_totals">
+        <h2>Cart Totals</h2>
+        <div class="total_row">
+          <span>Total:</span>
+          <span>0EGP</span>
+        </div>
+        <div class="total_row discount_row"
+          style=" color: rgb(5, 106, 5); font-size: medium; justify-content: center; padding-top: 10px;">
+          <span>Discount:</span>
+          <span>0 EGP</span>
+        </div>
+        <div class="links">
+          <button class="checkout" onclick="window.location.href='checkout.html'" title="Go To Checkout">
+            Proceed to Checkout
+          </button>
+          <a href="..\index.html" title="Go To Home Page"> &lt; Continue Shopping</a>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer>
     <p>© 2026 Lumora. All rights reserved.</p>
     <p>Follow us on our social media</p>
-    <div class="social-icons">       
+    <div class="social-icons">
       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>       
-      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>        
-      <a href="mailto:support@lumora.com"><i class="fa-solid fa-envelope"></i></a>    
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="mailto:support@lumora.com"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </footer>
   <script src="../javascript/layout.js"></script>
   <script src="../javascript/navbar.js"></script>
-    </body>
+</body>
+
 </html>

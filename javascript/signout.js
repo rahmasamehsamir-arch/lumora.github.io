@@ -1,5 +1,5 @@
-let client = localStorage.getItem('logged');
 let sign_out = document.querySelector('.out');
+let client = localStorage.getItem('logged');
 
 if(sign_out){
     if(client){
@@ -8,7 +8,6 @@ if(sign_out){
         sign_out.addEventListener("click", function(e){
             e.preventDefault();
             localStorage.removeItem('logged');
-            alert('Signed out successfully');
             window.location.href = "../index.html";
         });
 

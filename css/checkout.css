@@ -125,3 +125,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color:#A07E5E;
 }
+.ttl{
+    color:#513d33;
+    font-size:19px;
+}

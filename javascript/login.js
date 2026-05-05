@@ -1,7 +1,6 @@
+let users = JSON.parse(localStorage.getItem("users")) || [];
 let form = document.querySelector("form");
-
-if(form){
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     let input_email = document.querySelector('.in_mail');
@@ -10,31 +9,35 @@ form.addEventListener("submit", function(e){
     let email = input_email.value.trim();
     let password = input_password.value.trim();
 
-    if(email === ""){
+    if (email === "") {
         alert("Please enter an email");
         return;
     }
 
-    if(password === ""){
+    if (password === "") {
         alert("Please enter a password");
         return;
     }
 
-    let data = localStorage.getItem(email);
-
-    if(data === null){
+    if (users === null) {
         alert('Please sign up first');
         return;
     }
 
-    let user_data = JSON.parse(data);
+    let dataOfUserThatLoggedIn = null;
 
-    if(user_data.password === password){
-        alert('Welcome back ' + user_data.first_name);
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].email == email || users[i].password == password) {
+            dataOfUserThatLoggedIn = users[i];
+            break;
+        }
+    }
+
+    if (dataOfUserThatLoggedIn != null) {
+        alert('Welcome back ' + dataOfUserThatLoggedIn.first_name);
         localStorage.setItem('logged', email);
         window.location.href = "../index.html";
     } else {
         alert('Incorrect password');
     }
 });
-}

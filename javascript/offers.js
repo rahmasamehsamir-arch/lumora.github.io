@@ -1,10 +1,10 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
-/* ========== QUANTITY SYSTEM ========== */
+
 document.querySelectorAll(".threebuttons").forEach((box) => {
   let count = 1;
-  const span = box.querySelector(".count");
+  let span = box.querySelector(".count");
 
   box.querySelector(".plus").addEventListener("click", () => {
     count++;
@@ -18,7 +18,7 @@ document.querySelectorAll(".threebuttons").forEach((box) => {
     }
   });
 
-  
+
 
   box.querySelector(".plus").addEventListener("click", () => {
     box.setAttribute("data-count", count);
@@ -29,7 +29,7 @@ document.querySelectorAll(".threebuttons").forEach((box) => {
   });
 });
 
-/* ========== ADD TO CART ========== */
+
 document.querySelectorAll(".cart-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     let card = btn.closest(".lavender, .mocha, .rose, .strawberry, .candles, .oils");
@@ -54,11 +54,11 @@ document.querySelectorAll(".cart-btn").forEach((btn) => {
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
-  
+
   });
 });
 
-/* ========== ADD TO WISHLIST ========== */
+
 document.querySelectorAll(".wish-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     let card = btn.closest(".lavender, .mocha, .rose, .strawberry, .candles, .oils");
@@ -74,7 +74,7 @@ document.querySelectorAll(".wish-btn").forEach((btn) => {
     if (!exists) {
       wishlist.push(product);
       localStorage.setItem("wishlist", JSON.stringify(wishlist));
-      
+
     }
   });
 });

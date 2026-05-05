@@ -12,7 +12,7 @@ var candles=[
     {
         'id': 2,
         'name': 'Rose Whisper',
-        'image': ['rosewhisper.jpeg','rosewhisperhover.png'],
+        'image': ['rosewhisper.png.jpeg','rosewhisperhover.png'],
         'price': 345,
         'description1': 'Elevate your space with the elegance of our Rose Handmade Candle. Featuring a delicate and romantic floral scent, it brings a luxurious and comforting vibe to any room.',
         'description2': 'Infused with dried rose petals and crafted with high-quality ingredients, this candle is both visually stunning and beautifully fragrant.',
@@ -21,7 +21,7 @@ var candles=[
     {
         'id': 3,
         'name': 'Dreamy Lavender',
-        'image': ['dreamylavender.png.jpeg','dreamylavenderhover.png'],
+        'image': ['dreamylavender.png.jpeg','dreamylavenderhover.png.jpeg'],
         'price': 325,
         'description1': 'Experience pure relaxation with our Lavender Handmade Candle. Known for its calming and soothing properties, lavender helps reduce stress and promotes restful sleep.',
         'description2': 'This candle fills your space with a soft floral aroma, creating a peaceful and spa-like environment. Hand-poured with care, it offers a clean and long-lasting burn.',

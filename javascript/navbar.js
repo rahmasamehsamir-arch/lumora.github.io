@@ -1,5 +1,7 @@
+
+
 function toggleMenu(event) {
-  event.stopPropagation();
+  event.stopPropagation(); 
 
   document.getElementById("menu").classList.toggle("show");
 }

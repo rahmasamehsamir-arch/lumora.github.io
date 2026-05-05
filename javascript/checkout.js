@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function(){
     let visa = document.getElementById("visa");
     let cash = document.getElementById("cash");

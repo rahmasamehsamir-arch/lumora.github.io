@@ -10,7 +10,6 @@ if(form){
         let email = input_email.value.trim();
         let password = input_password.value.trim();
 
-        // validation
         if(email === ""){
             alert("Please enter an email");
             return;
@@ -21,7 +20,6 @@ if(form){
             return;
         }
 
-        // get data
         let data = localStorage.getItem(email);
 
         if(data === null){
@@ -31,12 +29,9 @@ if(form){
 
         let user_data = JSON.parse(data);
 
-        // check password (array index 4)
-        let stored_password = user_data[4];
-        let first_name = user_data[0];
-
-        if(stored_password === password){
-            alert("Welcome back " + first_name);
+    
+        if(user_data.password === password){
+            alert("Welcome back " + user_data.first_name);
 
             localStorage.setItem('logged', email);
 

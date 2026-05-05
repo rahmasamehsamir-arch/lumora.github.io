@@ -1,6 +1,6 @@
 let form = document.querySelector('form');
 
-if(form){
+if(form && document.querySelector('.in_first')){
 form.addEventListener("submit", function(event){
     event.preventDefault();
 
@@ -45,7 +45,7 @@ form.addEventListener("submit", function(event){
         return;
     }
 
-    let data_of_user = {
+    let user = {
         first_name: first,
         last_name: last,
         phon: tell,
@@ -53,10 +53,8 @@ form.addEventListener("submit", function(event){
         password: pass
     };
 
-    localStorage.setItem(mail, JSON.stringify(data_of_user));
+    localStorage.setItem(mail, JSON.stringify(user));
     localStorage.setItem('logged', mail);
-
-    alert("Account created successfully");
 
     window.location.href = "../index.html";
 });

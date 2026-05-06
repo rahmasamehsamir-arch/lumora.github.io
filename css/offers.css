@@ -11,9 +11,12 @@ body.vertical main{
     width:calc(95%-290px);
     margin-right:intial;
 }
-div.h1{
+ div.h1{
     text-align: center;
     padding-top: 10px;
+}
+body.dark h1.h1,p{
+    color:#CBC6BF
 }
 div.all{
     display: flex;

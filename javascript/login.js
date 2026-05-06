@@ -37,7 +37,8 @@ form.addEventListener("submit", function (e) {
         alert('Welcome back ' + dataOfUserThatLoggedIn.first_name);
         localStorage.setItem('logged', email);
         window.location.href = "../index.html";
+        return false;
     } else {
-        alert('Incorrect password');
+        alert('Incorrect password or email');
     }
 });

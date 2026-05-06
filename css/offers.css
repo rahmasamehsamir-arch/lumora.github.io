@@ -15,7 +15,7 @@ body.vertical main{
     text-align: center;
     padding-top: 10px;
 }
-body.dark h1.h1,p{
+body.dark div.title h1,p{
     color:#CBC6BF
 }
 div.all{

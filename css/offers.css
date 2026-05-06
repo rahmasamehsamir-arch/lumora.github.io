@@ -16,7 +16,7 @@ body.vertical main{
     padding-top: 10px;
 }
 body.dark div.title h1,p{
-    color:#CBC6BF
+    color:#CBC6BF;
 }
 div.all{
     display: flex;

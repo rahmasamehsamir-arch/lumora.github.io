@@ -6,12 +6,12 @@ let sign_out = document.querySelector('.out');
 
 if(sign_out){
 
-    if(client){
+    if(client)
+    {
     
         sign_out.style.display = "inline-block";
-
-   
-        sign_out.addEventListener("click", function(e){
+        sign_out.addEventListener("click", function(e)
+        {
             e.preventDefault();
             localStorage.removeItem('logged');
             alert('Signed out successfully');
@@ -21,8 +21,9 @@ if(sign_out){
             window.location.href = "../index.html";
         });
 
-    } else {
-       
+    } 
+    else 
+    {
         sign_out.style.display = "none";
     }
 }

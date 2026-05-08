@@ -3,8 +3,8 @@
 
 let client = localStorage.getItem('logged');
 let sign_out = document.querySelector('.out');
-let sign_in = document.querySelector('a[href='login.html']');
-let sign_up = document.querySelector('a[href='signup.html']');
+let sign_in = document.querySelector("a[href='login.html']");
+let sign_up = document.querySelector("a[href='signup.html']");
 if(sign_out){
 
     if(client)
@@ -17,8 +17,6 @@ if(sign_out){
             e.preventDefault();
             localStorage.removeItem('logged');
             alert('Signed out successfully');
-
-            
 
             window.location.href = "../index.html";
         });

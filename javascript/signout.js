@@ -25,3 +25,4 @@ if(sign_out){
        
         sign_out.style.display = "none";
     }
+}

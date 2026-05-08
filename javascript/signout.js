@@ -19,13 +19,14 @@ if(sign_out){
             alert('Signed out successfully');
 
             window.location.href = "../index.html";
+            return false;
         });
 
     } 
     else 
     {
         sign_out.style.display = "none";
-        sign_in.style.display = "inline-block";
-        sign_up.style.display = "inline-block";
+        sign_in.style.display = "block";
+        sign_up.style.display = "block";
     }
 }

@@ -1,32 +1,25 @@
-
-
-
 let client = localStorage.getItem('logged');
 let sign_out = document.querySelector('.out');
-let sign_in = document.querySelector("a[href='login.html']");
-let sign_up = document.querySelector("a[href='signup.html']");
+
 if(sign_out){
 
-    if(client)
-    {
-        sign_out.style.display = "block";
-        sign_in.style.display = "none";
-        sign_up.style.display = "none";
-        sign_out.addEventListener("click", function(e)
-        {
+    if(client){
+    
+        sign_out.style.display = "inline-block";
+
+   
+        sign_out.addEventListener("click", function(e){
             e.preventDefault();
             localStorage.removeItem('logged');
             alert('Signed out successfully');
 
+            sign_out.style.display = "none";
+
             window.location.href = "../index.html";
-            return false;
         });
 
-    } 
-    else 
-    {
+    } else {
+       
         sign_out.style.display = "none";
-        sign_in.style.display = "block";
-        sign_up.style.display = "block";
     }
 }

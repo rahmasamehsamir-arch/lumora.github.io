@@ -20,6 +20,6 @@ if(sign_out){
 
     } else {
        
-        sign_out.style.display = "none";
+        sign_out.style.display = "block";
     }
 }

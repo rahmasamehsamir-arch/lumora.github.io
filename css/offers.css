@@ -109,3 +109,7 @@ padding: 3px;
 width: 40px;
 height: 25px;
 }
+body.dark div.title h1,
+body.dark div.title p{
+    color:#CBC6BF;
+}

@@ -11,17 +11,15 @@ header {
     margin: 9px;
 }
 section {
-    height: 1500px;
     width: 95%;
     margin: auto;
     overflow: auto;
+    height: 1500px;
 }
-
 body.vertical section {
     width: calc(95% - 290px);
     margin-right: initial;
 }
-
 section .products {
     text-align: center;
     font-size: 65px;
@@ -136,6 +134,9 @@ section .card h3 {
     font-size: 25px;
     color: #3b2a22;
     letter-spacing: 1.5px;
+}
+body.vertical section .card h3{
+    font-size: 22px;
 }
 section .dryOil .card {
     padding: 20px 0px;
@@ -252,7 +253,6 @@ section .dryOil .card:hover .search {
     color: #d6bfa6;
     border: solid 2px #d6bfa6;
 }
-
 footer {
     margin-top: auto;
 }

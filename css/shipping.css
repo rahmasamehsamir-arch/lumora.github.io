@@ -46,10 +46,11 @@ img{
     height:auto; 
     border-radius: 40px;
 }
-body.dark p ,
-body.dark .link {
+body.dark p{
     color:#F5F0E1;}
-
+body.dark .link {
+    color:white;
+}
 body.dark a.successful,
 body.dark p>a{
       color:#B6C98A;}

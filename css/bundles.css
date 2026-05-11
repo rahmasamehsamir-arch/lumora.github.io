@@ -1,20 +1,17 @@
-header{
-    margin: 9px ;
-}
 *{
-    margin: 0;
-    
+    margin: 0; 
     box-sizing: border-box;
 }
 body{
     background-color: #F5F0E1;
 }
+header{
+    margin: 9px ;
+}
 main{
     margin: 10px 50px 40px 50px;
     justify-content: center;
 }
-
-
 .lavender, 
 .mocha,
 .rose,
@@ -25,7 +22,6 @@ main{
     align-items: center;
     gap: 20px;
 }
-
 .lavender .img img,
 .mocha .img img,
 .rose .img img,
@@ -82,26 +78,26 @@ div.threebuttons{
     border-radius: 5PX;
 }
 div.threebuttons button{
-background-color: transparent;
-border: none;
-padding: 3px;
-width: 35px;
+    background-color: transparent;
+    border: none;
+    padding: 3px;
+    width: 35px;
 }
 div.description{
-margin-top: 7px;
+    margin-top: 7px;
 }
 div.description p{
-padding: 5px;  
-width: 350px;  
+    padding: 5px;  
+    width: 350px;  
 }
 .lavender .buttons,
- .mocha .buttons,
- .rose .buttons,
- .strawberry .buttons,
- .lavenrose .buttons,
- .strawmocha .buttons,
- .candles .buttons,
- .oils .buttons{
+.mocha .buttons,
+.rose .buttons,
+.strawberry .buttons,
+.lavenrose .buttons,
+.strawmocha .buttons,
+.candles .buttons,
+.oils .buttons{
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -116,21 +112,20 @@ width: 350px;
 .strawmocha .buttons  button,
 .candles .buttons  button,
 .oils .buttons  button{
-border: none;
-padding: 5px;
-border-radius: 5px;
-width: 100px;
-color: #fff;
-
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    color: #fff;
 }
 .lavender .buttons  .one button,
- .mocha .buttons  .one button,
- .rose .buttons  .one button,
- .strawberry .buttons  .one button,
- .lavenrose .buttons  .one button,
- .strawmocha .buttons  .one button,
- .candles .buttons  .one button,
- .oils .buttons  .one button{
+.mocha .buttons  .one button,
+.rose .buttons  .one button,
+.strawberry .buttons  .one button,
+.lavenrose .buttons  .one button,
+.strawmocha .buttons  .one button,
+.candles .buttons  .one button,
+.oils .buttons  .one button{
     background-color: #d6bfA6;
     border: solid 2px #B08968;
 }
@@ -146,47 +141,45 @@ color: #fff;
     border: solid 2px #7A553A;
 }
 .lavender .buttons  .three button,
- .mocha .buttons  .three button,
- .rose .buttons  .three button,
- .strawberry .buttons  .three button,
- .lavenrose .buttons  .three button,
- .strawmocha .buttons  .three button,
- .candles .buttons  .three button,
- .oils .buttons  .three button{
+.mocha .buttons  .three button,
+.rose .buttons  .three button,
+.strawberry .buttons  .three button,
+.lavenrose .buttons  .three button,
+.strawmocha .buttons  .three button,
+.candles .buttons  .three button,
+.oils .buttons  .three button{
     background-color: #7A553A;
     border: solid 2px #d6bfA6;
 }
-
 .lavender .buttons  .one button:hover,
- .mocha .buttons  .one button:hover,
- .rose .buttons  .one button:hover,
- .strawberry .buttons  .one button:hover,
- .lavenrose .buttons  .one button:hover,
- .strawmocha .buttons  .one button:hover,
- .candles .buttons  .one button:hover,
- .oils .buttons  .one button:hover{
+.mocha .buttons  .one button:hover,
+.rose .buttons  .one button:hover,
+.strawberry .buttons  .one button:hover,
+.lavenrose .buttons  .one button:hover,
+.strawmocha .buttons  .one button:hover,
+.candles .buttons  .one button:hover,
+.oils .buttons  .one button:hover{
     opacity: 0.5;
 }
 .lavender .buttons  .two button:hover,
- .mocha .buttons  .two button:hover,
- .rose .buttons  .two button:hover,
- .strawberry .buttons  .two button:hover,
- .lavenrose .buttons  .two button:hover,
- .strawmocha .buttons  .two button:hover,
- .candles .buttons  .two button:hover,
- .oils .buttons  .two button:hover{
+.mocha .buttons  .two button:hover,
+.rose .buttons  .two button:hover,
+.strawberry .buttons  .two button:hover,
+.lavenrose .buttons  .two button:hover,
+.strawmocha .buttons  .two button:hover,
+.candles .buttons  .two button:hover,
+.oils .buttons  .two button:hover{
     opacity: 0.5;
 }
 .lavender .buttons  .three button:hover,
- .mocha .buttons  .three button:hover,
- .rose .buttons  .three button:hover,
- .strawberry .buttons  .three button:hover,
- .lavenrose .buttons  .three button:hover,
- .strawmocha .buttons  .three button:hover,
- .candles .buttons  .three button:hover,
- .oils .buttons  .three button:hover,
-div.three a:hover
-{
+.mocha .buttons  .three button:hover,
+.rose .buttons  .three button:hover,
+.strawberry .buttons  .three button:hover,
+.lavenrose .buttons  .three button:hover,
+.strawmocha .buttons  .three button:hover,
+.candles .buttons  .three button:hover,
+.oils .buttons  .three button:hover,
+div.three a:hover{
     opacity: 0.5;
 }
 div.three a{
@@ -194,10 +187,38 @@ div.three a{
     background-color: #7A553A;
     border: solid 2px #d6bfA6;
     padding: 5px;
-border-radius: 5px;
-width: 100px;
-color: #fff;
-display: flex;
-justify-content: space-around;
-gap: 10px;
+    border-radius: 5px;
+    width: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+body.dark .info .brand h1,
+body.dark .info .product h2,
+body.dark .info .price h3,
+body.dark .info .javabutton .quantity h3,
+body.dark .info .javabutton .threebuttons .minus,
+body.dark .info .javabutton .threebuttons .count,
+body.dark .info .javabutton .threebuttons .plus,
+body.dark .info .description p{
+    color: #d6bfA6;
+}
+body.dark footer .social-icons a i{
+    color: #F5F0E1;
+}
+.social-icons a i{
+    transition: 0.5s;
+}
+.social-icons a i:hover{
+    color: #e6b85c;
+}
+body.dark .social-icons a i:hover{
+    color: #e6b85c;
+}
+body.dark nav .nav-right .cart-link i,
+body.dark nav .nav-right .user-menu button i,
+body.dark nav .nav-right .user-menu .dropdown .out span,
+body.dark nav .nav-right .mode i{
+    color: #F5F0E1;
 }

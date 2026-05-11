@@ -61,5 +61,5 @@ form.addEventListener("submit", function (event) {
     alert("Account created successfully");
 
     window.location.href = "../index.html";
-    return false;
+    
 });

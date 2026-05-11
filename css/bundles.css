@@ -10,7 +10,7 @@ header{
 }
 main{
     margin: 10px 50px 40px 50px;
-    justify-content: center;
+    
 }
 .lavender, 
 .mocha,
@@ -42,7 +42,6 @@ main{
 .candles .info,
 .oils .info{
     width:80%;
-    width: auto;
     height: 400px;                 
     padding: 20px;
 
@@ -66,7 +65,6 @@ div.price h3{
 }
 div.javabutton{
     display: flex;
-    height: auto;
     }
 div.quantity h3{
     font-weight: 300;

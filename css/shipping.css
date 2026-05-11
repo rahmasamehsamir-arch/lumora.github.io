@@ -48,7 +48,7 @@ img{
 }
 body.dark p{
     color:#F5F0E1;}
-body.dark a.link {
+body.dark a{
     color:white;
 }
 body.dark a.successful,

@@ -130,28 +130,3 @@ input[type="submit"]:hover{
     color:#513d33;
     font-size:19px;
 }
-body.dark{
-    background:#121212;
-}
-body.dark label,
-body.dark .ttl,
-body.dark h3,
-body.dark a{
-    color:#F5F0E1;
-}
-body.dark legend,
-body.dark .totaltopay,
-body.dark .checkout{
-    color:#B6C98A;
-}
-body.dark section{
-    background:#1E1A17;
-    border:2px solid #7A8450;
-}
-body.dark input{
-    background:#2A241F;
-    color:white;
-}
-body.dark input::placeholder{
-    color:#C8B6A6;
-}

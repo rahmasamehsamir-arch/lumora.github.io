@@ -12,7 +12,7 @@ if(sign_out){
             e.preventDefault();
             localStorage.removeItem('logged');
             alert('Signed out successfully');
-
+            sign_out.style.display = "none";
             window.location.href = "../index.html";
         });
 

@@ -6,6 +6,7 @@
 body{
     background:#F5F0E1;
     font-family:Georgia;
+     margin-top: 50px;
 }
 .link{
     display:flex;

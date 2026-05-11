@@ -7,7 +7,7 @@ body{
     background:#F5F0E1;
     font-family:Georgia;
     margin-top:50px;
-    margin-left:50px;
+    margin-left:100px;
 }
 .link{
     display:flex;
@@ -36,7 +36,7 @@ p>a{
     text-decoration: none;
     color:#c0896e ;
 }
-a:hover{
+P>a:hover{
     color:#5a2d16 ;
 }
 img{
@@ -46,3 +46,12 @@ img{
     height:auto; 
     border-radius: 40px;
 }
+body.dark p,
+body.dark .link{
+    color:#F5F0E1;}
+
+body.dark a.successful,
+body.dark p>a{
+      color:#B6C98A;}
+body.darkP>a:hover{
+    color:white;}

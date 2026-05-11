@@ -8,8 +8,8 @@ body{
     background-color: #F5F0E1;
 }
 body.vertical main{
-    width:calc(95%-290px);
-    margin-right:intial;
+    width: calc(95% - 290px);
+    margin-right: initial;
 }
  div.h1{
     text-align: center;

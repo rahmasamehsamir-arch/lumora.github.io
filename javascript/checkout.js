@@ -21,6 +21,11 @@ document.addEventListener("DOMContentLoaded", function(){
     items.innerText =itemsvalue+" EGP";
     delivery.innerText= deliveryvalue +" EGP";
     total.innerText = finaltotal +" EGP";
+    
+    let mode = document.querySelector(".mode");
+    mode.onclick =function(){
+        document.body.classlist.toggle("dark");}
+    
 });
 function gotopage(){
     let firstname= document.getElementById("first_name").value;

@@ -113,3 +113,21 @@ body.dark div.title h1,
 body.dark div.title p{
     color:#CBC6BF;
 }
+body.dark footer .social-icons a i{
+    color: #F5F0E1;
+}
+.social-icons a i{
+    transition: 0.5s;
+}
+.social-icons a i:hover{
+    color: #e6b85c;
+}
+body.dark .social-icons a i:hover{
+    color: #e6b85c;
+}
+body.dark nav .nav-right .cart-link i,
+body.dark nav .nav-right .user-menu button i,
+body.dark nav .nav-right .user-menu .dropdown .out span,
+body.dark nav .nav-right .mode i{
+    color: #F5F0E1;
+}

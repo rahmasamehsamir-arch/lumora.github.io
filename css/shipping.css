@@ -56,3 +56,8 @@ body.dark p>a{
       color:#B6C98A;}
 body.dark P>a:hover{
     color:white;}
+
+body.vertical main{
+    width: calc(95% - 290px);
+    margin-right: initial;
+}

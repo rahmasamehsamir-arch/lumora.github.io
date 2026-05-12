@@ -61,6 +61,7 @@ body.dark P > a:hover {
 }
 
 body.vertical main {
-    width: calc(95% - 290px);
+    width: calc(95% - 500px);
     margin-right: initial;
+    margin: auto;
 }

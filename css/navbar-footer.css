@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 17px 30px;
+    z-index: 100;
 }
 .nav-left {
     display: flex;
@@ -82,7 +83,7 @@ button {
 .dropdown {
     position: absolute;
     top: 40px;
-    right: 0;
+    right: -160px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -175,28 +176,28 @@ body.dark .social-icons a:hover {
 }
 nav .nav-right .cart-link i:hover,
 nav .nav-right .user-menu button i:hover,
-nav .nav-right .mode i:hover{
+nav .nav-right .mode i:hover {
     transition: 0.5s;
 }
 nav .nav-right .cart-link i:hover,
 nav .nav-right .user-menu button i:hover,
-nav .nav-right .mode i:hover{
+nav .nav-right .mode i:hover {
     color: #e6b85c;
 }
 body.dark nav .nav-right .cart-link i:hover,
 body.dark nav .nav-right .user-menu button i:hover,
-body.dark nav .nav-right .mode i:hover{
+body.dark nav .nav-right .mode i:hover {
     color: #e6b85c;
 }
-header .layout i{
+header .layout i {
     transition: 0.5s;
 }
-header .layout i:hover{
+header .layout i:hover {
     color: #e6b85c;
 }
-body.dark header .layout i{
+body.dark header .layout i {
     color: #f5f0e1;
 }
-body.dark header .layout i:hover{
+body.dark header .layout i:hover {
     color: #e6b85c;
 }

@@ -1,5 +1,4 @@
 
-
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -41,19 +40,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let cleanPrice = parseFloat(item.price.toString().replace(/[^\d.]/g, '')) || 0;
             container.innerHTML += `
-    <article class="card">
-        <div class="img-box">        
+            <article class="card">
+                <div class="img-box">        
 
-         <img src="${imgSrc}" />
-                </div>
+                <img src="${imgSrc}" />
+                        </div>
 
-    <h3>${item.name}</h3>
-         <p>${cleanPrice} EGP</p>
+            <h3>${item.name}</h3>
+                <p>${cleanPrice} EGP</p>
 
-       <button class="remove-button">Remove</button>
-                <button class="add-button">Add to Cart</button>
+            <button class="remove-button">Remove</button>
+                        <button class="add-button">Add to Cart</button>
 
-            </article>
+                    </article>
         `;
         });
     }
@@ -97,8 +96,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
     });
-
-});
-
 
 

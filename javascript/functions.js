@@ -103,14 +103,14 @@ function addToWishlistCandles(that, productId) {
   wishlist.push(candleProduct);
   updateLocalStorage();
   that.textContent = "Remove from wishlist";
-  that.setAttribute("onclick", `removeFromWhishlistCandles(this,${productId})`);
+  that.setAttribute("onclick", `removeFromWishlistCandles(this,${productId})`);
 }
-function removeFromWhishlistCandles(that, productId) {
-  wishlist.filter(function (item) {
+function removeFromWishlistCandles(that, productId) {
+  wishlist=wishlist.filter(function (item) {/*wishlist*/
     return item.id != productId;
   });
   updateLocalStorage();
-  that.textContent = "Add to whishlist";
+  that.textContent = "Add to wishlist";
   that.setAttribute("onclick", `addToWishlistCandles(this,${productId})`);
 }
 function addToCartDryOil(that, productId) {
@@ -134,10 +134,10 @@ function addToWishlistDryOil(that, productId) {
   wishlist.push(dryOilProduct);
   updateLocalStorage();
   that.textContent = "Remove from wishlist";
-  that.setAttribute("onclick", `removeFromWhishlistDryOil(this,${productId})`);
+  that.setAttribute("onclick", `removeFromWishlistDryOil(this,${productId})`);
 }
-function removeFromWhishlistDryOil(that, productId) {
-  wishlist.filter(function (item) {
+function removeFromWishlistDryOil(that, productId) {
+  wishlist=wishlist.filter(function (item) {/*wishlist*/
     return item.id != productId;
   });
   updateLocalStorage();
@@ -154,6 +154,12 @@ function getProductCart(productId) {
   });
   return !(product.length == 0);
 }
+function getProductWishlist(productId) {
+  let product = wishlist.filter(function (item) {
+    return item.id === productId;
+  });
+  return !(product.length == 0);
+}
 function printButtonCartCandles(productId) {
   if (getProductCart(productId)) {
     return `<button class="cart" onclick="removeFromCartCandles(this,${productId})">
@@ -166,8 +172,8 @@ function printButtonCartCandles(productId) {
   }
 }
 function printButtonWishlistCandles(productId) {
-  if (getProductCart(productId)) {
-    return `<button class="wishlist" onclick="removeFromWhishlistCandles(this,${productId})">
+  if (getProductWishlist(productId)) {
+    return `<button class="wishlist" onclick="removeFromWishlistCandles(this,${productId})">
                     Remove from Wishlist
                 </button>`;
   } else {
@@ -188,8 +194,8 @@ function printButtonCartDryOil(productId) {
   }
 }
 function printButtonWishlistDryOil(productId) {
-  if (getProductCart(productId)) {
-    return `<button class="wishlist" onclick="removeFromWhishlistDryOil(this,${productId})">
+  if (getProductWishlist(productId)) {
+    return `<button class="wishlist" onclick="removeFromWishlistDryOil(this,${productId})">
                     Remove from Wishlist
                 </button>`;
   } else {

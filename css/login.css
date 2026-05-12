@@ -1,83 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
-   min-height: 100vh;
+body {
+    min-height: 100vh;
     width: 100%;
-    background-color: #F5F0E1;
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+    background-color: #f5f0e1;
+    font-family: Georgia, "Times New Roman", Times, serif;
     display: flex;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
 }
-main{
-    background-color: #D6BFA6;
+main {
+    background-color: #d6bfa6;
     text-align: center;
     padding: 35px;
     border-radius: 30px;
     width: 30%;
-    height: 75vh;}
-.wel{
+    height: 75vh;
+}
+.wel {
     font-size: 50px;
     margin-bottom: 5px;
-}   
-.please{
+}
+.please {
     margin-top: 0px;
     margin-bottom: 15px;
     font-size: 17px;
 }
-form{
+form {
     text-align: left;
 }
-.in_mail,.in_word{
-    width:90% ;
+.in_mail,
+.in_word {
+    width: 90%;
     padding: 5px 12px;
     border-radius: 10px;
-    margin-top: 3px ;
+    margin-top: 3px;
     margin-bottom: 15px;
-} 
-.mail,.word{
+}
+.mail,
+.word {
     width: 70%;
     display: block;
-    margin-bottom:2px ;
+    margin-bottom: 2px;
     text-align: left;
     font-weight: bold;
-}  
-.forget{
-    color:#7A553A  ;
+}
+.forget {
+    color: #7a553a;
     display: block;
     text-align: right;
     text-decoration: none;
 }
-a:hover{
+a:hover {
     text-decoration: underline;
 }
-button{
-    color:#F5F0E1  ;
+button {
+    color: #f5f0e1;
     display: block;
-    width:90% ;
+    width: 90%;
     padding: 5px 12px;
     border-radius: 10px;
     margin: 20px auto;
-    background-color: #3B2A22;
+    background-color: #3b2a22;
     font-size: 15px;
     border: none;
 }
-button:hover{
+button:hover {
     text-decoration: underline;
-    background-color:#B08968;
+    background-color: #b08968;
 }
-.not{
+.not {
     display: block;
     text-align: center;
     margin-top: 50px;
 }
-.sign{
-     color:#7A553A ;
-     text-decoration: none;
+.sign {
+    color: #7a553a;
+    text-decoration: none;
 }
-.sign:hover{
-     text-decoration: underline;
+.sign:hover {
+    text-decoration: underline;
 }

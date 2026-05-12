@@ -9,6 +9,12 @@ if (localStorage.getItem('cart') == null) {
 } else {
     cart = JSON.parse(localStorage.getItem('cart'));
 }
+
+if (localStorage.getItem('wishlist') == null) {
+    updateLocalStorage();
+} else {
+    wishlist = JSON.parse(localStorage.getItem('wishlist'));
+}
 popupkeyCandles.addEventListener("click", function () {
     let popup = document.querySelector(".popup.Candles");
     openPopup('Candles');
@@ -67,7 +73,6 @@ for (let i = 1; i < dryoil.length; i++) {
     </div>
     `;
 }
-
 boxOfPopup.addEventListener("click", function (e) {
     e.stopPropagation();
 });

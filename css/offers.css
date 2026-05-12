@@ -1,133 +1,139 @@
-header{margin: 9px;}
-*{
+header {
+    margin: 9px;
+}
+* {
     margin: 0;
     box-sizing: border-box;
-   
 }
-body{
-    background-color: #F5F0E1;
+body {
+    background-color: #f5f0e1;
 }
-body.vertical main{
+body.vertical main {
     width: calc(95% - 290px);
     margin-right: initial;
 }
- div.h1{
+div.h1 {
     text-align: center;
     padding-top: 10px;
 }
-body.dark div.title h1,p{
-    color:#CBC6BF;
+body.dark div.title h1,
+p {
+    color: #cbc6bf;
 }
-div.all{
+div.all {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 20px;
-    
 }
-div.img img{
-width: 400px;
-border-radius: 20px;
-margin-top: 10px;
+div.img img {
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 10px;
 }
-div.icon img{
+div.icon img {
     width: 40px;
     outline: none;
     height: 35px;
-    background-color: #F5F0E1;
+    background-color: #f5f0e1;
 }
-div.icon button{
-    flex: 1;             
-    border: none;      
-    display: flex;       
-    justify-content: center; 
+div.icon button {
+    flex: 1;
+    border: none;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #F5F0E1;
-     width: 40px;
+    background-color: #f5f0e1;
+    width: 40px;
     height: 35px;
 }
 .icon button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .icon i {
-  color: #333;
-  transition: 0.3s;
+    color: #333;
+    transition: 0.3s;
 }
 
 .icon i:hover {
-  color: #c59d5f;
+    color: #c59d5f;
 }
-div.icon button:hover{
+div.icon button:hover {
     opacity: 0.5;
 }
 div.icon {
-    display: flex;       
-    width: 100%;        
+    display: flex;
+    width: 100%;
     height: 50px;
 }
-div.word{
+div.word {
     text-align: center;
     padding: 10px;
-    background-color:#B08968;
+    background-color: #b08968;
     border-radius: 20px;
-    
 }
-h1.h1{
+h1.h1 {
     font-size: 30px;
 }
-div.title{
+div.title {
     text-align: center;
     width: 300px;
     margin: auto;
     margin-top: 10px;
 }
-div.javabutton{
+div.javabutton {
     display: flex;
     margin-top: 10px;
     justify-content: center;
     align-items: center;
-    }
-div.quantity h3{
+}
+div.quantity h3 {
     font-weight: 300;
     font-size: 15px;
 }
-div.threebuttons{
+div.threebuttons {
     margin-left: 15px;
-    border: dotted 1.5px #F5F0E1;
-    border-radius: 5PX;
+    border: dotted 1.5px #f5f0e1;
+    border-radius: 5px;
     width: 100px;
-height: 30px;
+    height: 30px;
 }
-div.threebuttons button{
-background-color:transparent;
-border: none;
-padding: 3px;
-width: 40px;
-height: 25px;
+div.threebuttons button {
+    background-color: transparent;
+    border: none;
+    padding: 3px;
+    width: 40px;
+    height: 25px;
 }
 body.dark div.title h1,
-body.dark div.title p{
-    color:#CBC6BF;
+body.dark div.title p {
+    color: #cbc6bf;
 }
-body.dark footer .social-icons a i{
-    color: #F5F0E1;
+body.dark footer .social-icons a i {
+    color: #f5f0e1;
 }
-.social-icons a i{
+.social-icons a i {
     transition: 0.5s;
 }
-.social-icons a i:hover{
+.social-icons a i:hover {
     color: #e6b85c;
 }
-body.dark .social-icons a i:hover{
+body.dark .social-icons a i:hover {
     color: #e6b85c;
 }
 body.dark nav .nav-right .cart-link i,
 body.dark nav .nav-right .user-menu button i,
 body.dark nav .nav-right .user-menu .dropdown .out span,
-body.dark nav .nav-right .mode i{
-    color: #F5F0E1;
+body.dark nav .nav-right .mode i {
+    color: #f5f0e1;
+}
+
+body.vertical main {
+    width: calc(95% - 500px);
+    margin-right: initial;
+    margin: auto;
 }

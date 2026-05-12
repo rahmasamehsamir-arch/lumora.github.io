@@ -1,42 +1,45 @@
-body{
-    background-color: #F5F0E1;
-    
+
+* {
+    box-sizing: border-box;
 }
-main{
-    margin:40px 70px 70px 70px;
+
+body {
+    background-color: #f5f0e1;
+}
+main {
+    margin: 40px 70px 70px 70px;
     min-height: 100vh;
 }
-.everything{
+.everything {
     display: flex;
-  gap: 40px;
-  align-items: flex-start;
+    gap: 40px;
+    align-items: flex-start;
 }
-.cart_details{
+.cart_details {
     width: 60%;
 }
-.cart_totals{
+.cart_totals {
     width: 40%;
     text-align: center;
     background: #f3e9d7;
-  padding: 20px;
-  border-radius: 6px;
+    padding: 20px;
+    border-radius: 6px;
 }
-body.dark section .cart_totals{
+body.dark section .cart_totals {
     color: #d6bfa6;
 }
-h2{
+h2 {
     font-size: xx-large;
     margin-top: 0px;
     padding: 5px;
     border-bottom: 2px solid #ddd;
-    
 }
-.total_row{
-  font-weight: bold;
-  font-size: 20px;
+.total_row {
+    font-weight: bold;
+    font-size: 20px;
 }
-.checkout{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.checkout {
+    font-family: Georgia, "Times New Roman", Times, serif;
     border-radius: 4px;
     border: none;
     padding: 10px;
@@ -45,25 +48,25 @@ h2{
     margin: auto;
     font-size: large;
 }
-.checkout:hover{
+.checkout:hover {
     background-color: #b08968;
 }
-.cart_totals a{
+.cart_totals a {
     text-decoration: none;
     color: #858383;
-    font-size:17px ;
+    font-size: 17px;
     margin-top: 5px;
 }
-.cart_totals a:hover{
+.cart_totals a:hover {
     color: #7a553a;
 }
-.links{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 15px;
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
 }
-.page_name{
+.page_name {
     font-size: larger;
     font-family: Georgia;
     padding-bottom: 30px;
@@ -71,89 +74,84 @@ h2{
 }
 .products_header,
 .product {
-  display: grid;
-  grid-template-columns: 10px 80px 1fr 130px 130px 130px;
-  align-items: center;
-  gap: 15px;
+    display: grid;
+    grid-template-columns: 10px 80px 1fr 130px 130px 130px;
+    align-items: center;
+    gap: 15px;
 }
 .products_header {
     font-size: larger;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: bold;
-  border-bottom: 2px solid #ddd;
-  padding: 10px 0;
-  background: #f3e9d7;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    background: #f3e9d7;
 }
-body.dark section .products_header{
+body.dark section .products_header {
     color: #d6bfa6;
 }
 .product {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 10px 0;
-  border-bottom: 2px solid #ddd;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
 }
-body.dark section .product{
+body.dark section .product {
     color: #d6bfa6;
 }
-.product:hover{
-    background-color:#f3e9d7 ;
+.product:hover {
+    background-color: #f3e9d7;
 }
 img {
-  width: 60px;
+    width: 60px;
 }
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
-
 .remove {
-    color:#b08968 ;
-  background: none;
-  border: none;
-  font-size: 25px;
-  opacity: 0.8;
-  padding: 3px 0px;
+    color: #b08968;
+    background: none;
+    border: none;
+    font-size: 25px;
+    opacity: 0.8;
+    padding: 3px 0px;
 }
-.remove:hover{
+.remove:hover {
     color: #d6bfa6;
 }
 .quantity {
-  display: flex;
-  align-items: center;
-  border: #d6bfa6 solid 1px;
-  border-radius: 5px;
-  padding: 3px 8px;
-  width: fit-content;
+    display: flex;
+    align-items: center;
+    border: #d6bfa6 solid 1px;
+    border-radius: 5px;
+    padding: 3px 8px;
+    width: fit-content;
 }
-
 .quantity button {
-  border: none;
-  background: none;
-  font-size: 16px;
-  border-radius: 10px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    border-radius: 10px;
 }
 .quantity span {
-  margin: 0px 8px;
-  font-size: 14px;
+    margin: 0px 8px;
+    font-size: 14px;
 }
-
-.minus:hover{
-   color: #b08968;
-}
-.plus:hover{
+.minus:hover {
     color: #b08968;
 }
- 
-.coupon{
+.plus:hover {
+    color: #b08968;
+}
+.coupon {
     padding: 10px 0px 0px 20px;
     font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     color: #7a553a;
-  flex-direction: column;
-  width: 60%;
-  
+    flex-direction: column;
+    width: 60%;
 }
-input{
-    border:none ;
+input {
+    border: none;
     border-bottom: 2px solid #aaa;
     background: transparent;
     outline: none;
@@ -162,60 +160,63 @@ input{
     width: 250px;
     font-size: 14px;
 }
-input:focus{
+input:focus {
     border: #7a553a solid 2px;
     border-radius: 4px;
 }
-::placeholder{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+::placeholder {
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
-.apply{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.apply {
+    font-family: Georgia, "Times New Roman", Times, serif;
     border-radius: 4px;
     border: none;
     padding: 10px;
     background-color: #d6bfa6;
 }
-.apply:hover{
+.apply:hover {
     background-color: #b08968;
 }
 .coupon_row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-.wishlist{
+.wishlist {
     padding: 10px 0px 0px 20px;
     font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     color: #7a553a;
-  flex-direction: column;
-  width: 40%;
+    flex-direction: column;
+    width: 40%;
 }
-.wishlist a{
+.wishlist a {
     text-decoration: none;
     color: #858383;
     padding-left: 23px;
-    font-size:17px ;
+    font-size: 17px;
 }
-.wishlist a:hover{
+.wishlist a:hover {
     color: #7a553a;
 }
 .promo_message {
-  font-size: 14px;
-  margin-top: 5px;
-  padding-left: 3px;
+    font-size: 14px;
+    margin-top: 5px;
+    padding-left: 3px;
 }
-
 .promo_message.success {
-  color: rgb(5, 106, 5);
+    color: rgb(5, 106, 5);
 }
-
 .promo_message.error {
-  color: red;
+    color: red;
+}
+body.vertical main {
+    width: calc(95% - 500px);
+    margin-right: initial;
+    margin: auto;
 }

@@ -11,7 +11,6 @@ if (localStorage.getItem("layout") === "vertical") {
 if (modeBtn) {
     modeBtn.addEventListener("click", function () {
         body.classList.toggle("dark");
-
         if (body.classList.contains("dark")) {
             localStorage.setItem("mode", "dark");
         } else {
@@ -22,7 +21,6 @@ if (modeBtn) {
 if (layoutBtn) {
     layoutBtn.addEventListener("click", function () {
         body.classList.toggle("vertical");
-
         if (body.classList.contains("vertical")) {
             localStorage.setItem("layout", "vertical");
         } else {

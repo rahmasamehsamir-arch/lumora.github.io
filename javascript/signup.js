@@ -1,3 +1,4 @@
+
 let users = JSON.parse(localStorage.getItem("users")) || [];
 let form = document.querySelector('form');
 form.addEventListener("submit", function (event) {
@@ -23,13 +24,15 @@ form.addEventListener("submit", function (event) {
         alert('Please fill in all fields');
         return;
     }
-    if(/\d/.test(first)){
+    let regex_finding_number = /\d/;
+
+    if (regex_finding_number.test(first)) {
         alert("First name must contain letters only");
         return;
     }
-     if(/\d/.test(last)){
+    if (regex_finding_number.test(last)) {
         alert("Last name must contain letters only");
-         return;
+        return;
     }
     if (!mail.includes('@') || !mail.includes('.')) {
         alert("Email is not valid");

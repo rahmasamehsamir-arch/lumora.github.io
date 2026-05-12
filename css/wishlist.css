@@ -1,9 +1,9 @@
-body{
-    background-color: #F5F0E1;
-    font-family: Arial, sans-serif; 
+body {
+    background-color: #f5f0e1;
+    font-family: Arial, sans-serif;
 }
-header{
-    margin:9px; 
+header {
+    margin: 9px;
 }
 body.vertical main {
     width: calc(95% - 290px);
@@ -12,25 +12,25 @@ body.vertical main {
 .empty-wishlist {
     text-align: center;
     padding: 100px;
-    color: #3B2A22;
+    color: #3b2a22;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 40px;
 }
 h2 {
     margin-bottom: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 40px;
-    color:#3B2A22;
+    color: #3b2a22;
     padding-left: 20px;
 }
-.empty-wishlist p{
-    color: #3B2A22;
+.empty-wishlist p {
+    color: #3b2a22;
 }
 .empty-wishlist a {
     margin-top: 15px;
     padding: 10px 20px;
-    background-color:#3B2A22;
+    background-color: #3b2a22;
     text-decoration: none;
     border-radius: 8px;
 }
@@ -44,41 +44,42 @@ h2 {
     background-color: white;
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    position: relative; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
     transition: 0.3s ease;
 }
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 .img-box {
     width: 100%;
-    height: 300px; 
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
 }
 .img-box img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
-    display: block;  
+    display: block;
 }
 .shop-button {
     padding: 12px 25px;
-    background-color: #3B2A22;
+    background-color: #3b2a22;
     color: white;
     border-radius: 8px;
     font-weight: bold;
 }
 .shop-button:hover {
-    background-color: #7A552A;
+    background-color: #7a552a;
     transition: 0.3s ease;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-.remove-button, .add-button {
+.remove-button,
+.add-button {
     padding: 8px 15px;
-    background-color: #7A552A;
+    background-color: #7a552a;
     color: white;
     border-radius: 8px;
     font-weight: bold;
@@ -86,31 +87,34 @@ h2 {
     cursor: pointer;
 }
 .card p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-} 
-html, body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+html,
+body {
     height: 100%;
-    margin: 0; 
+    margin: 0;
 }
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-} 
-footer{
+}
+footer {
     margin-top: auto;
 }
 body.vertical main {
     width: calc(95% - 290px);
     margin-right: initial;
 }
-body.dark .Mycollection{
+body.dark .Mycollection {
     color: #d6bfa6;
 }
-body.dark .container .card h3,p{
-    color: #3B2A22;
+body.dark .container .card h3,
+p {
+    color: #3b2a22;
 }
-body.dark .empty-wishlist h2,body.dark .empty-wishlist p{
+body.dark .empty-wishlist h2,
+body.dark .empty-wishlist p {
     color: #d6bfa6;
 }
 .navbar {
@@ -119,4 +123,10 @@ body.dark .empty-wishlist h2,body.dark .empty-wishlist p{
     align-items: center;
     padding: 20px 30px;
     flex-direction: row;
+}
+
+body.vertical main {
+    width: calc(95% - 500px);
+    margin-right: initial;
+    margin: auto;
 }

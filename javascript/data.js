@@ -1,5 +1,4 @@
 
-
 var candles=[
     {
         'id': 1,

@@ -16,7 +16,4 @@ foreget.addEventListener("click",function(test)
         return;
     }
     alert('Link sent to' +email);
-
-
-
 })

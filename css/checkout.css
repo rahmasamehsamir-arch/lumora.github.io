@@ -154,7 +154,7 @@ body.dark input::placeholder{
     color:#C8B6A6;
 }
 body.vertical main {
-    width: calc(95% - 500px);
+    width: calc(95% -450px);
     margin-right: initial;
     margin: auto;
 }

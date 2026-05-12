@@ -119,5 +119,10 @@ body.dark .mode {
 }
 
 
+body.vertical main {
+    width: calc(95% - 500px);
+    margin-right: initial;
+    margin: auto;
+}
 
  
